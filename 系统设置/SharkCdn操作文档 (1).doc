@@ -1,0 +1,1255 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:w="urn:schemas-microsoft-com:office:word"
+    xmlns="http://www.w3.org/TR/REC-html40">
+    <head><meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <style type="text/css">
+        table  
+        {  
+            border-collapse: collapse;
+            border: none;  
+            width: 100%;  
+        }  
+        td,tr  
+        {  
+            border: solid #CCC 1px;
+            padding:3px;
+            font-size:9pt;
+        } 
+        .codestyle{
+            word-break: break-all;
+            mso-highlight:rgb(252, 252, 252);
+            padding-left: 5px; background-color: rgb(252, 252, 252); border: 1px solid rgb(225, 225, 232);
+        }
+        img {
+            width:100;
+        }
+    </style>
+    <meta name=ProgId content=Word.Document>
+    <meta name=Generator content="Microsoft Word 11">
+    <meta name=Originator content="Microsoft Word 11">
+    <xml><w:WordDocument><w:View>Print</w:View></xml></head>
+    <body><h1>1、SharkCdn操作文档</h1><div style="margin-left:0px;"><h2>1.1、系统管理</h2><div style="margin-left:20px;"><h2>1.1.1、用户信息</h2><div style="margin-left:0px;"><h3>1.1.1.1、基本信息</h3><div style="margin-left:30px;"><ul>
+<li><strong>基本信息</strong></li>
+</ul>
+<p>包含用户ID，用户名称，注册时间，邮箱，手机号码，账户信息，账户余额，VIP套餐，VIP过期时间，授权码，系统信息，系统版本，API文档的用户基本信息。</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/2b72a078124c799fd72368da73bcea89" alt="" /></p></div><h3>1.1.1.2、访问统计</h3><div style="margin-left:30px;"><ul>
+<li><strong>访问统计</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/468398d7b1dd961d1a315e30a63f7f68" alt="" /></p></div><h3>1.1.1.3、数据统计</h3><div style="margin-left:30px;"><ul>
+<li><strong>数据统计</strong></li>
+</ul>
+<p>cdn内拥有的资源的统计。
+<img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/eba051c0be7cffebeacf0eb691b9befb" alt="" /></p></div></div><h2>1.1.2、系统设置</h2><div style="margin-left:0px;"><h3>1.1.2.1、DNS接入</h3><div style="margin-left:30px;"><ul>
+<li><strong>DNS接入</strong></li>
+</ul>
+<p>1.在letcdn注册帐号并添加域名，并获得如下信息：</p>
+<p>DNS主域名：输入我们在letcdn里添加的域名(只能输入顶级域名)</p>
+<p>2.在帐户设置中生成API_KEY</p>
+<p>UID: 这个uid是letcdn账号自动生成的
+API_KEY： API_KEY需要点击生成key,然后点保存。看下图</p>
+<p>3.进入cdn的系统设置，点击DNS接入。如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/ecada249f3709cba32fedd80b39f9bf6" alt="" /></p>
+<p>把相关信息接入系统设置，然后点测试连接，可测试是否对接成功</p>
+<p>默认TTL：600
+UID与API_KEY可在letcdn帐户设置中找到</p>
+<ul>
+<li><strong>备注</strong>：点击dns修复可以重新同步因网络原因没有及时更新同步的配置信息到dns解析</li>
+</ul></div><h3>1.1.2.2、基本设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>基本设置</strong></li>
+</ul>
+<p>基本设置可以设置API Key和ip白名单</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/a7a844338b1a7abd6093a41d8f7542aa" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：API Key主要用来做api开发对接使用，或第三方系统对接
+IP白名单可以设置允许登陆用户管理中心的ip地址
+绑定登陆ip，启用后会自动绑定登陆用户的ip地址</li>
+</ul></div><h3>1.1.2.3、国际域名</h3><div style="margin-left:30px;"><ul>
+<li><strong>国际域名</strong></li>
+</ul>
+<p>国际域名功能可以实现每个站点都有一个不同的别名，这样可以把每个站点都隔离开，不会因为一个别名被攻击，而影响到全部的站点</p>
+<p>注意：开启国际域名功能cdn的主别名和国际域名都需要托管到letcdn，域名要在一个帐户里。并且需要购买letcdn的收费版套餐。</p>
+<p>1.在letcdn添加好主别名和国际域名，并配置为相同的套餐</p>
+<p>2.在系统管理 --> 系统设置 --> 国际域名里面增加一个国际域名或多个国际域名</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/4d37ea860c02bac342796ca068f93d3d" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：不要把主别名添加到国际域名里,否则可能出现解析问题</li>
+</ul></div></div><h2>1.1.3、错误设置</h2><div style="margin-left:0px;"><h3>1.1.3.1、添加错误</h3><div style="margin-left:30px;"><ul>
+<li><strong>添加错误</strong></li>
+</ul>
+<p>错误设置有三种类型，第一种是显示内容，第二种是url跳转，第三种是js。</p>
+<p>1.显示内容，可以直接输入要显示错误页面内容，还支持html代码编写，如下图:
+直接输入错误内容：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/27893fc115679eb74a2668fa36343fbe" alt="" /></p>
+<p>2.url跳转，输入需要跳转到的地址，如下图：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3c5a3b4b66ef55017721ada14eebc97c" alt="" /></p>
+<p>3.js方式，支持js代码，如下图：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/7a5a3765e786c52185970e51eec02ad4" alt="" /></p>
+<p>在自定义错误里选择js选项，输入：</p>
+<table width='100%' class='codestyle'><pre><code>document.write("error!" + hostname);</code></pre></table>
+<p>这是最简单的写法，只显示节点名，如果要显示其他效果，可自已修改js</p>
+<ul>
+<li><strong>备注</strong>：设置自定义错误只支持cdn的vip客户，免费客户不支持该功能。</li>
+</ul></div><h3>1.1.3.2、错误url设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>错误url设置</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/8c0122c86e0c848cd2e9b3574e4f0604" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：如上图，可以点击建议设置，显示http://ip:82/system/error ip是你主控的ip
+也可以输入域名，https格式为：<a href="https://域名:4430/system/error">https://域名:4430/system/error</a> http格式为：<a href="http://域名:82/system/error">http://域名:82/system/error</a> 域名是你自己的域名，要解析到cdn主控ip</li>
+</ul></div></div><h2>1.1.4、预定义设置</h2><div style="margin-left:0px;"><h3>1.1.4.1、预定义设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>预定义设置</strong></li>
+</ul>
+<p>1.点击系统设置-->预定义设置，增加预定义触发频率和预定义防护模式
+(1).触发频率没有固定参数，用户可根据自已网站正常连接请求数设置合适参数。如果请求数和时间都设为0就是绝对触发，但是通过白名单后，在白名单时间内不会再触发
+(2).防CC有哪些模式可查看文档：防cc模式</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/af140263edcd51d7b11a5fe7d3bcc7ad" alt="" /></p>
+<p>2.登陆站点后进入应用防火墙设置，找到防cc设置，把刚刚增加的触发频率，防护模式选上，点击提交</p>
+<p>添加好后,在站点的应用防火墙中可以看到防CC的设置选项</p>
+<ul>
+<li><strong>备注</strong>：防CC代码模式有以下几种： 注：复制代码时代码中间一定要空一行，如下格式：
+1.http redirect（普通）</li>
+</ul>
+<table width='100%' class='codestyle'><pre><code>Code Block
+HTTP/1.1 302 FOUND
+Connection: keep-alive
+Location: {{url}}
+
+<html><body><a href="{{url}}">continue</a></body></html></code></pre></table>
+<p>2.html redirect</p>
+<table width='100%' class='codestyle'><pre><code>Code Block
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: no-cache,no-store
+
+<html><head><meta http-equiv="refresh" content="0;url={{url}}"></head><body><a href="{{url}}">continue</a></body></html></code></pre></table>
+<p>3.js plain</p>
+<table width='100%' class='codestyle'><pre><code>Code Block
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: no-cache,no-store
+
+<html><body><script language="javascript">window.location="{{url}}";</script><a href="{{url}}">continue</a></body></html></code></pre></table>
+<p>4.js concat</p>
+<table width='100%' class='codestyle'><pre><code>Code Block
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: no-cache,no-store
+
+<html><body><script language="javascript">window.location="{{murl}}";</script></body></html></code></pre></table>
+<p>5.js revert(复杂)</p>
+<table width='100%' class='codestyle'><pre><code>Code Block
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: no-cache,no-store
+
+<html><body><script language="javascript">{{revert:url}};window.location=url;</script></body></html></code></pre></table>
+<p>6.html manual</p>
+<table width='100%' class='codestyle'><pre><code>Code Block
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: no-cache,no-store
+
+<html><body><a href="{{url}}">continue</a></body></html></code></pre></table>
+<p>7.deny</p>
+<table width='100%' class='codestyle'><pre><code>Code Block
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: no-cache,no-store
+
+<html><body>try again later</body></html></code></pre></table></div></div></div><h2>1.2、CDN管理</h2><div style="margin-left:20px;"><h2>1.2.1、区域列表</h2><div style="margin-left:0px;"><h3>1.2.1.1、添加区域</h3><div style="margin-left:30px;"><ul>
+<li>新建一个区域</li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/a364b01a5f66bce4ce1cd2d5886f61af" alt="" /></p>
+<ul>
+<li>备注：点击CDN管理---区域列表---添加 输入区域名称</li>
+</ul></div><h3>1.2.1.2、应用防火墙</h3><div style="margin-left:30px;"><ul>
+<li>配置应用防火墙</li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/bbeef6a1ffaf6511399b8de8eefb6198" alt="" /></p>
+<p>添加区域后 --- 点击配置 --- 应用防火墙</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/896dd74f15d0292a6dc4756c835b42a9" alt="" /></p>
+<p>分别配置访问频率限制 --- 是否启动iptables|ipset --- 连接数限制 --- 黑白名单有效期</p>
+<ul>
+<li>备注：
+应用防火墙中可以配置访问频率限制和连接数限制，黑白名单有效期，设置后只要触发了就会加入黑名单。 拒绝的方式有两种，一种是cdn节点来拒绝触发的ip,第二种是iptables来拒绝</li>
+</ul>
+<p>(1).访问频率限制：超过就会触发频率限制，加入进黑名单。</p>
+<p>(2).连接数限制：设置后每ip访问连接数将不能超过设置值，如勾选加入黑名单，触发后会加入黑名单</p>
+<p>(3).启用iptables | ipset :
+没有开启iptables的，触发后就是通过cdn节点程序来拒绝。
+开启了iptables后就是通过节点系统的iptables来拒绝，因为iptables在更底层，会优先拒绝，不会到cdn节点拒绝
+(注：在后台设置的加黑名单时间同样有效)
+ipset是iptables的扩展,它允许你创建 匹配整个地址集合的规则。而不像普通的iptables链只能单IP匹配, ip集合存储在带索引的数据结构中,这种结构即时集合比较大也可以进行高效的查找，除了一些常用的情况,比如阻止一些危险主机访问本机，从而减少系统资源占用或网络拥塞</p></div><h3>1.2.1.3、HTTPS设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>HTTPS设置</strong></li>
+</ul>
+<p>配置ssl证书，兼容ng格式的证书，在下框中输入端口、域名证书和密钥，点击提交，算法协议可不填</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/bf26a4693d9a9309ac38470c118c926f" alt="" /></p></div><h3>1.2.1.4、资源设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>资源设置</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/76b467d93d9890e62e50a605cc75393a" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：http长超时这个已经去掉了
+连接超时时间,单位秒
+IO读写超时时间,单位秒，不能低于5秒，最好不超过120秒</li>
+</ul></div><h3>1.2.1.5、错误URL</h3><div style="margin-left:30px;"><ul>
+<li><strong>错误URL</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/de837395f982d824cc8b19555fec8129" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：错误url主要是配置独立主控的自定义错误状态码时会用到</li>
+</ul>
+<p>独立主控自定义错误状态码</p>
+<p>输入域名，https格式为：<a href="https://域名:4430/system/error">https://域名:4430/system/error</a> http格式为：<a href="http://域名:82/system/error">http://域名:82/system/error</a> 域名是你自己的域名，要解析到cdn主控ip
+配置完url这个地址在浏览器的访问效果如下就是正常的：</p>
+<table width='100%' class='codestyle'><pre><code>function $(id){if(document.getElementById){return document.getElementById(id);}else if(document.all){return document.all(id);}return document.layers[id];} function check_main(){var m=$('main');if(m.style.display=='none'){ m.style.display=;}} check_main();</code></pre></table></div><h3>1.2.1.6、缓存设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>缓存设置</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/0519a4b3eed2a4157201120afcd5a90c" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：最大缓存页面(普通) 设置1M表示：小于1M的内容用普通缓存，大于1M的用智能缓存，最大文件超过1G则不缓存(文件大小可自已设置)
+智能缓存的好处是可以断点缓存，比如下载大文件或看视频进行到一半，中断了连接，智能缓存可以下次访问时继续接着缓存，普通缓存就要重新来过</li>
+</ul></div><h3>1.2.1.7、防SQL注入</h3><div style="margin-left:30px;"><ul>
+<li><strong>防SQL注入</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/78646cdcdd251baad86934a204392bb3" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：代码如下：
+<table width='100%' class='codestyle'><pre><code>'.*[; ]?((or)|(insert)|(select)|(union)|(update)|(delete)|(replace)|(create)|(drop)|(alter)|(grant)|(load)|(show)|(exec))[\s(]</code></pre></table></li>
+</ul></div><h3>1.2.1.8、日志设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>日志设置</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/faccac163452d729c8b6b2c273b7a649" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：翻转日志频率是指在设定的时间会翻转一个新的文件，日志分析一般也根据这个新翻转的文件来分析，生成新的日志数据信息
+日志保留时间是指日志的保留时间</li>
+</ul></div><h3>1.2.1.9、多层CDN设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>多层CDN设置</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/140a7d6cd6883b5fd15118ec5900ef68" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：这个签名主要是认证的作用，多层cdn在传送真实ip时，黑客如果通过中间层cdn节点发送假ip，源就不能得到真实的ip。这个签名认证可以让中间层cdn节点认证上层cdn节点ip的来源</li>
+</ul></div><h3>1.2.1.10、自定义设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>自定义设置</strong></li>
+</ul>
+<p>在区域自定义配置中统一配置全部节点缓存:</p>
+<p>区域
+1.在cdn后台区域中自定义区域配置中添加下面代码，具体参数也可自行调整，代码解释在文档下面有</p>
+<table width='100%' class='codestyle'><pre><code><!--#start 200 -->
+<config>
+<lang>zh_CN</lang>
+<cache default='1' max_cache_size='2M' memory='100M' max_bigobj_size='1G' disk='50%' disk_work_time='* 1-6 * * *' refresh_time='600'/>
+<request action='vhs' >
+       <table name='BEGIN'>
+               <chain action='continue' >
+                       <mark_self_ip ip=></mark_self_ip>
+               </chain>
+       </table>
+</request>
+</config></code></pre></table>
+<p>上面代码参数解释：</p>
+<p>默认缓存：  cache default
+最大缓存网页(普通)：  max_cache_size
+内存缓存：  memory
+最大缓存网页(智能)：  max_bigobj_size
+磁盘缓存：  disk
+磁盘扫描时间：  disk_work_time
+默认缓存时间： refresh_time
+添加区域自定义配置如下图操作</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/f5c882a95ef42fdc258f70711c50df52" alt="" /></p>
+<p>2.第一次安装的节点记得要点一次格式化缓存</p>
+<ul>
+<li>备注：上图中#start 200这一行要加，因为kangle默认的添加顺序是100，不加#start 200 有的配置可能会被复盖还原 规则的开头和结尾都要写</li>
+</ul></div><h3>1.2.1.11、设置区域线路黑白名单</h3><div style="margin-left:30px;"><ul>
+<li><strong>设置区域线路黑白名单</strong></li>
+</ul>
+<p>无</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.1.12、日志</h3><div style="margin-left:30px;"><ul>
+<li><strong>日志</strong></li>
+</ul>
+<p>同步日志记录了该区域下所有站点的操作记录</p>
+<p>在区域列表点击日志</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/07a3f2f97c8247908892de09744f1933" alt="" /></p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/aca0693dd89f2b813f13b25e683f84ae" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.1.13、端口</h3><div style="margin-left:30px;"><ul>
+<li><strong>端口</strong></li>
+</ul>
+<p>区域里面设置的端口是指允许站点可以设置的端口，如果区域没有开放这个端口，那么站点设置里面就无法设置该端口</p>
+<p>1.先去区域里面开放端口，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/c66157331971dc02fefb1bbadf0c29ac" alt="" /></p>
+<p>2.站点设置里面添加开放的端口，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3e4f38fe206d826af06110077fcfea93" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：区域设置的端口，不允许在站点里面的四层端口设置该端口，会提示该端口已占用</li>
+</ul></div></div><h2>1.2.2、节点列表</h2><div style="margin-left:0px;"><h3>1.2.2.1、节点列表介绍</h3><div style="margin-left:30px;"><ul>
+<li><strong>节点列表介绍</strong></li>
+</ul>
+<p>在节点列表可以查看和管理所有的节点，具体主要功能有：</p>
+<ol>
+<li>增加节点：可以查看安装节点的代码。 如何安装cdn节点</li>
+<li>查询监控：可批量查看当前区域下节点的监控状态，使用此功能前提是要cdn和letcdn对接成功。配置dns接入</li>
+<li>节点top：可以查看当前区域下所有节点的监控状态</li>
+<li>节点详情：可以查看当前区域下站点的连接数和带宽。还可以查看节点的负载情况</li>
+<li>更多操作：可以批量对节点进行操作，操作前需先勾选节点</li>
+<li>进入节点管理：可以对节点的性能查看和缓存设置 单个cdn节点配置缓存</li>
+<li>dns监控-状态码：点击可以修改监控使用哪种模式 监控模式(待传链接)</li>
+<li>节点监控：可以查看节点1小时内的内存，请求数和流量使用统计</li>
+</ol>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/af9db3689cceb79c502e2d2883283e74" alt="" /></p>
+<p>批量操作功能：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/d8590592ede2ee552ec20832144bfd6c" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.2.2、添加节点</h3><div style="margin-left:30px;"><ul>
+<li><strong>添加节点</strong></li>
+</ul>
+<p>1.点击CDN管理---节点列表---新增节点 会弹出节点的安装程序</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/98eaf86a5d783c35b87255bbb385e1fd" alt="" /></p>
+<p>2.linux服务器，直接复制下图脚本命令运行。windows服务器，下载对应版本到服务器上运行安装。</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/209580b8c2cc6bc79addf2be5aa30e16" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：安装成功后,节点会出现在待初始化列表,点击初始化
+4.6.0版初始化是默认不显示，有新节点需要初始化时会自动显示
+区域：选择要初始化节点到哪个区域
+名字：设置节点的名字，只能用英文和数字。
+节点类型：选择默认的边缘节点就行了。 中间节点是多层CDN功能(需vip4以上套餐支持)。
+备注：可留空</li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/203043cc9a8ccf3bd0e80dda089a0001" alt="" /></p>
+<p>4.初始化成功后，节点会显示在对应的区域中。</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.2.3、新增子节点</h3><div style="margin-left:30px;"><ul>
+<li><strong>添加子节点</strong></li>
+</ul>
+<p>1.对于多ip服务器，安装完节点程序后可以添加子ip，点击对应节点名字或ID号，会弹出节点管理界面</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/f54f4d7de1b5dde10c727cc30e96e0eb" alt="" /></p>
+<p>2.点击添加子节点</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/9d42651ea648c4697f456afcd4ece46a" alt="" /></p>
+<p>3.输入子ip地址后，点提交</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/63185b2f041d2c2d761cd24b0f52e6f9" alt="" /></p>
+<p>4.然后回到节点列表，按F5刷新，点开下拉就能看到添加的子ip了</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.2.4、节点配置</h3><div style="margin-left:30px;"><ul>
+<li><strong>节点缓存配置</strong>
+cdn节点配置磁盘缓存后可缓存用户访问过的内容，再次访问相同的内容不用再次到源重新获取数据，提高了网站访问速度并减轻了源的压力</li>
+</ul>
+<p>注：节点缓存默认只缓存静态内容，动态网站缓存需开启强制缓存。</p>
+<ol>
+<li>如下图点击节点名字或ID进入节点设置</li>
+</ol>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/36e5f228073ae2238769a14c26645b1b" alt="" /></p>
+<p>2.在节点配置中，设置内存缓存大小，输入磁盘缓存大小，记得带上单位，例：100M或10G</p>
+<p>注：如果自定义了磁盘缓存目录，点击格式化磁盘缓存目录后，要登陆节点服务器重启下kangle进程，命令：service kangle restart</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/0779a8213d73d2efbe33cbfa146c5f86" alt="" /></p>
+<p>（注：磁盘缓存大小也可以输入百分比，如50%，内存缓存不能用百分比）。
+新安装的节点要点击一下格式化磁盘缓存目录，磁盘缓存目录可以不填，默认目录是在/vhs/kangle/cache/ (linux系统)。也可以自定义目录，自定义目录后要点击格式化磁盘缓存目录。</p>
+<ul>
+<li><strong>备注</strong>：在节点管理里面设置的缓存要优先于区域自定义配置里面的缓存设置
+进出口路由为空表示哪个IP进来，出去也是那个IP，举个例子：节点主ip是2.2.2.2，辅IP是3.3.3.3，如果进来ip是2.2.2.2，出口IP也是2.2.2.2。如需指定IP，就输入相应的Ip
+点击关闭的话就是清除设置。
+在区域中给全部节点配置缓存参考</li>
+</ul></div><h3>1.2.2.5、升级cdn节点版本</h3><div style="margin-left:30px;"><ul>
+<li><strong>升级cdn节点版本</strong></li>
+</ul>
+<p>点节点列表==>选中要升级版本的节点==>更多操作==>升级节点</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3efd8315beb1742edd47aecba045c0de" alt="" /></p>
+<p>点击后会显示成功，这个时候就只需要等待节点自动升级就好，升级快时几分钟，慢可能就更久点了 但也有特殊情况会升级失败，比如节点和升级服务器网络连接不好或者节点的版本和最新版本相差太大都有可能失败，这时就需要手动升级了。</p>
+<p>linux手动升级： 只需重新运行一遍节点的安装脚本即可</p></div><h3>1.2.2.6、登陆节点3311后台</h3><div style="margin-left:30px;"><ul>
+<li><strong>登陆节点3311后台</strong></li>
+</ul>
+<p>cdn节点的3311管理后台是登陆kangle管理的，cdn后台添加的站点和配置都是同步到节点程序上来运行的，因为节点初始安装密码是随机生成的，所以登陆需要修改密码
+注：cdn的所有操作都可在cdn后台操作完成</p>
+<p>登陆cdn的3311后台如下步骤操作：</p>
+<ol>
+<li>点击节点列表中节点ID号</li>
+</ol>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/a19b891dc0674fe6b5955840b3ef28a2" alt="" /></p>
+<ol>
+<li>先选择开启kangle访问</li>
+</ol>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/b33f6e62bbd7114ab2c6984e09f43e71" alt="" /></p>
+<p>然后在浏览器输入节点登陆地址：<a href="http://ip:3311">http://ip:3311</a></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div></div><h2>1.2.3、分组解析</h2><div style="margin-left:0px;"><h3>1.2.3.1、新建分组</h3><div style="margin-left:30px;"><ul>
+<li><strong>新建分组</strong></li>
+</ul>
+<p>1.点击CDN管理—-分组解析—-新增分组 会弹出添加分组</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/bddc098d7eb4795a4f999cc4eaacbbf2" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：TTL默认为600，最小不可低于120
+在每个区域中添加分组,细分线路,访问最佳线路</li>
+</ul></div><h3>1.2.3.2、设置分地区细分线路</h3><div style="margin-left:30px;"><ul>
+<li><strong>设置分地区细分线路</strong></li>
+</ul>
+<p>用户访问网站有时网络有互通的问题，sharkcdn的分组解析可以细分线路，让用户访问自动走最优线路，线路不细分都加默认里，访问的节点是随机分配的
+下面我们讲下如何设置：
+比如你有电信，移动，和国外的节点 (本例只用了一个节点，主要是讲设置方法)</p>
+<p>1.点分组解析，如下图点击分组名进入相应的分组
+注：分组可以创建多个，不同的分组可分配不同的节点ip</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/62120c7b546d04f1c4c8368ffb82fb27" alt="" /></p>
+<p>2.把节点ip加入到右边启用，注：节点一般都要加到默认里，如果只加细分的线路组，那其他地区的线路用户会不能访问</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/99af245cb1d2013e48786b15659cc075" alt="" /></p>
+<p>如下图ip已加到右边，就已经启用了</p>
+<p>如果线路要再细分到地区，继续查看下面的步骤</p>
+<p>3.然后再点线路，选择相应区域或地区的线路：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/68d84e047c551bdc865b245a142cdcd9" alt="" /></p>
+<p>4.把ip加入到右边的电信线路分组里，这样电信的用户访问就会优先走这个电信节点 （本例是假设定这个ip是电信ip）</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.3.3、设置备用节点</h3><div style="margin-left:30px;"><ul>
+<li><strong>设置备用节点</strong></li>
+</ul>
+<p>注：要使用备用节点功能，至少需要两个节点同时cdn系统要和letcdn对接好 1.如下图点击进入分组解析里</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3472862ccdc201c79c6b4677db6c28b7" alt="" /></p>
+<p>2.点击启用要设为备用的节点</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/143f498709677a810d950f4869cc47ad" alt="" /></p>
+<p>3.出现如图提示就设置好了，备用的节点显示为灰色 设置备用节点后，启用中的节点挂了一台，备用节点就会自动启动，原节点恢复后，备用节点又会自动恢复为备用</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.3.4、配置备用分组</h3><div style="margin-left:30px;"><ul>
+<li><strong>配置备用分组</strong></li>
+</ul>
+<p>sharkcdn分组解析增加备用分组功能，只有备用分组才能设为副分组，当主分组节点全部挂掉后，才启用副分组里的节点。</p>
+<p>第一步：分组解析添加两个分组（非备用分组和备用分组），如下图dd4</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/168ea821cf22f6b00ff250d71150cb43" alt="" /></p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/eb9c80356d2f7b686cf1a20cdc0bcc5a" alt="" /></p>
+<p>第二步：点击进入两个分组，分别添加一个不同的节点，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/680b1949f6076ec083db2910a4fd3c75" alt="" /></p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/c3fe5ff3bd2b92e9f353e3b972ee88e0" alt="" /></p>
+<p>第三步：站点列表，选择一个站点，把主分组设为非备用分组，副分组设为备用分组。如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/206cdaaa04d93ec519865ca898c6198d" alt="" /></p>
+<p>第四步：设置完成后，可以查询该站点下域名的解析是指向哪个节点，查询命令：dig 域名 +trace 如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/7e2ad2aa5bbf2ade2289afcf0fd931b8" alt="" /></p>
+<p>可以看到该站点下域名只解析到了主分组里的65节点，副分组的节点不会启用。</p>
+<p>当我们把主分组的节点手动停止后，那么该站点下的域名才会解析到副分组的节点，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/7ef6b1f7443c98adcb762a16cc0f93f0" alt="" /></p>
+<p>可以看到该站点下域名解析到副分组里的66节点</p>
+<ul>
+<li><strong>备注</strong>：当主分组节点全部挂掉后，才启用副分组里的节点</li>
+</ul></div></div><h2>1.2.4、虚拟节点</h2><div style="margin-left:0px;"><h3>1.2.4.1、虚拟节点如何配置</h3><div style="margin-left:30px;"><ul>
+<li><strong>虚拟节点如何配置</strong></li>
+</ul>
+<p>虚拟节点可以做到批量，轮换，融合，策略的作用</p>
+<p>使用虚拟节点一定要接入letcdn, 接入文档参考：系统设置-dns接入
+1.下图是装好的cdn节点</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/35428babe72eb9402bf2a43aed5ef9c3" alt="" /></p>
+<p>2.如下图点击CDN管理-->虚拟节点-->新增虚拟节点，设置好相应参数
+ipv4和ipv6类型是使用自有的cdn节点，CNAME类型可接入第三方cdn别名(注：添加别名域名后面要加上点)
+切换间隔设置后是按这个时间来进行切换节点，时间单位是秒,设置的时间必须是10的倍数</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/149b0ac1d979d8a97c2aec88a63ae0b3" alt="" /></p>
+<p>3.建好虚拟节点后，点击节点名进入虚拟节点</p>
+<p>4.把相应的节点ip加到右边的虚拟节点解析里
+注：加入虚拟节点的ip至少需要两个，才能轮换，并且只是虚拟节点里的ip轮换，普通节点不会轮换
+虚拟节点的ip没有开启监控也是会轮换的。如果开启了监控，ip故障暂停后，就不会轮换这个ip了</p>
+<p>5.点击CDN管理-->分组解析，进入相应的分组</p>
+<p>6.选择虚拟节点，勾选加到右边启用虚拟节点，然后虚拟节点就会按照我们设置的间隔时间在三个ip之间轮换</p>
+<p>加到右边就是已启用虚拟节点</p>
+<p>7.然后可以用ping测试域名是否按设置的时间轮换ip</p>
+<p>以上虚拟节点就配置完成了</p>
+<p>另外普通节点也可以和虚拟节点配合使用
+注：如果已加入虚拟节点的ip，然后在普通节点里再次添加启用，这个ip在解析里就会一直出现</p>
+<p>如下图解析出来，显示了两个普通ip和一个虚拟节点的ip</p>
+<p>查询解析命令：dig 域名 +trace</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div></div><h2>1.2.5、产品列表</h2><div style="margin-left:0px;"><h3>1.2.5.1、添加产品</h3><div style="margin-left:30px;"><ul>
+<li><strong>添加产品</strong></li>
+</ul>
+<p>点击CDN管理--产品列表--添加，添加产品。</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/0fde60ea34ec86d404f08bae15c1e6e7" alt="" /></p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/b5c2ebe53ce9c7f61f1db688de38b366" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div></div><h2>1.2.6、站点列表</h2><div style="margin-left:0px;"><h3>1.2.6.1、站点设置功能介绍</h3><div style="margin-left:30px;"><ul>
+<li><strong>站点设置功能介绍</strong></li>
+</ul>
+<p>站点设置可以对当前站点进行设置，比如https,缓存，url重写，防盗链等，具体看下在介绍：</p>
+<p>1.https设置: 三种添加ssl证书的方法
+在下图中加入ssl证书，证书格式兼容nginx的ssl证书格式</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/f6464ce7c31c8213efe15de76c6114ea" alt="" /></p>
+<p>2.长连接：
+长连接多用于操作频繁，点对点的通讯，而且连接数不能太多情况。每个TCP连接都需要三步握手，这需要时间，如果每个操作都是短连接，再操作的话那么处理速度会降低很多，所以每个操作完后都不断开，下次处理时直接发送数据包就OK了，不用建立TCP连接
+开启长连接后cdn节点和源服务器之间采用长连接通信，提高性能，缩短打开页面时间，时间建议设置为5-10秒之间
+如下图在站点设置中设置长连接</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/5413675490dd9db85d9c3a482c4fa488" alt="" /></p>
+<p>3.缓存设置：
+在缓存设置中可以站点的缓存时间，并且可以针对站点开启强制缓存
+清除：当点击清除后，会清空当前站点的所有缓存
+刷新：当站点缓存设置缓存时间为3600秒，缓存未到期前，点击刷新会重新检测源站是否有更新，如果有更新 ，即使在缓存时间未到期，访问网站也会到源获取新的内容
+注:在这里设置缓存前，必须节点先配置好缓存大小：节点配置缓存大小
+使用案例：</p>
+<p>如何开启强制缓存
+如何设置整个站点不缓存
+如何不缓存某条url记录
+如何查看网站是否被缓存</p>
+<p>下图中勾选了强制本地为强制缓存</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3cbc012827c419f87add296a91f00ae9" alt="" /></p>
+<p>4.开启gzip压缩：
+开启gzip压缩，先勾选相关参数，再点提交就可以</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3c3650d04d6d23c93c65291e8bbeb2a9" alt="" /></p>
+<p>5.URL重写：
+url的301和302跳转如下图设置就可以，详细可参考：url跳转</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/e5434d9b0685f91a5fa8d55abe0b39cd" alt="" /></p>
+<p>6.防盗链：</p>
+<p>示例 ：
+1.白名单设置：
+需求 : www.abc.com域名需要防盗链，仅允许来源于www.test.com的网址可以访问，其他网站链接全部拒绝。如下图：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/da92931e0800b898afbf97a81e7bc414" alt="" /></p>
+<p>空路由匹配是在来源输入中杠 -</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/fca8db2931e0a0591a221e22aaa5c0f9" alt="" /></p>
+<p>2.黑名单设置：
+需求：要禁止来源于www.test.com的链接访问www.abc.com，如下图：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/018080e5f0a130e5fbee72d3ec318a57" alt="" /></p>
+<p>7.限速：
+限速分为每连接、每节点、每IP限速
+(1).每连接
+每连接限速只针对当前连接
+点设置，在url输入框中输入要限速的url网址(支持正则表达式)和速度</p>
+<p>(2).每节点
+每节点限速针对来源于此url的所有连接
+点设置，在url输入框中输入要限速的url网址(支持正则表达式)和速度</p>
+<p>(3).每IP
+每ip限速：每ip限速针对于访问此url的ip
+点设置，在url正则输入框输入要限速的ip和速度</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/baa6175d52ae4a883d18ffbfd3cb3c38" alt="" /></p>
+<p>8.端口设置：
+端口设置可以给站点开通需要使用的端口，多个端口中间用逗号分隔，https端口记得带上s 参考示例</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/f481832fbdfdca93cd93e9a8aa1b46e5" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.2、站点设置里自定义端口</h3><div style="margin-left:30px;"><ul>
+<li><strong>站点设置里自定义端口</strong></li>
+</ul>
+<p>用户如果需要用到其他的端口，比如：<a href="http://www.test.com:8080">http://www.test.com:8080</a> ,可以如下图设置开启端口
+每个端口中间要用逗号隔开
+注：下图加了两个端口8080这是http端口
+要用https端口就要像下图中一样，在端口后面加上s ,并且站点设置中要添加好ssl证书，例如：999s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/dc93bafde1d396325e2c5649717c272e" alt="" /></p>
+<p>站点自定义端口需要到区域开放这个端口，否则会报错，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/460cd9cb058e576dfe916f0cf9de5aa7" alt="" /></p>
+<p>选择站点所在区域开放端口，区域列表----端口，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/72d9c21f31695e7ba096b58c48831e73" alt="" />
+<img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/15047a2c38a2c43523658319ceaaae0a" alt="" /></p>
+<p>注意：端口选择正确的端口类型，上面8080是http端口，999是https端口</p>
+<p>设置完成后，就可以到站点里面自定义端口了</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.3、站点开启强制缓存</h3><div style="margin-left:30px;"><ul>
+<li><strong>站点开启强制缓存</strong></li>
+</ul>
+<p>在站点设置中如下图设置：</p>
+<p>强制缓存有两种方式，一种是文件类型，一种是url方式
+下图是以文件类型为例，输入需要强制缓存的文件扩展名，多个以竖线隔开
+设置缓存时间，单位是秒，然后要记得勾选强制缓存</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/d1227fc88d57c58a7c42719b6cd14420" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：post方法的不能缓存，因为post需要上传数据，只能缓存get方法的。</li>
+</ul></div><h3>1.2.6.4、设置整个站点不缓存</h3><div style="margin-left:30px;"><ul>
+<li><strong>设置整个站点不缓存</strong></li>
+</ul>
+<p>想要部分站点不缓存只需要在站点设置中把缓存时间设为0即可，这样不会影响到其他的站点缓存。</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/70561c5c2d6cd43af7a245ab6cda1d52" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.5、不缓存某条url记录</h3><div style="margin-left:30px;"><ul>
+<li><strong>不缓存某条url记录</strong></li>
+</ul>
+<p>如果需要单独对一条url记录不缓存，配置方法如下：</p>
+<ol>
+<li>在站点设置的缓存策略，添加规则，如下图输入，注意缓存的时间要设为0</li>
+</ol>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/db9688e0255fc26f154d5b8073212ea3" alt="" /></p>
+<p>2.配置好后，我们可以验证下X-Cache显示MISS就是没有缓存了</p>
+<table width='100%' class='codestyle'><pre><code>X-Cache：MISS from yn-190</code></pre></table>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/92c2944c640c6e93ab701fabbca0564a" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.6、查看网站是否被缓存</h3><div style="margin-left:30px;"><ul>
+<li><strong>查看网站是否被缓存</strong></li>
+</ul>
+<p>比如开启了强制缓存，如何查看缓存是否生效 本例以firefox浏览器查看，先打开浏览器，按下F12, 然后在浏览器是输入网址访问</p>
+<p>如下图响应头里的 x-cache显示 Miss from 就是没有缓存</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/c7b6c99da144467552fd21a9f67c5094" alt="" /></p>
+<p>如下图x-cache显示HIT from就是缓存了</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/25d7424bd00244b888140ebd725f5a6d" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.7、批量操作站点</h3><div style="margin-left:30px;"><ul>
+<li><strong>批量操作站点</strong></li>
+</ul>
+<p>如下图勾选或全选要修改的站点，然后点批量操作</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/2fc0328889a8bfc8428133afaa98a774" alt="" /></p>
+<p>选择要批量操作的选项进行修改，修改其它选项也是一样的方法</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/73e178a7b41995f57813b6569f9651d1" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.8、Cdn如何站点设置中添加301跳转</h3><div style="margin-left:30px;"><ul>
+<li><strong>Cdn如何站点设置中添加301跳转</strong></li>
+</ul>
+<p>url跳转方式支持正则表达式，以下是两种跳转的案例示范：</p>
+<p>进入站点----站点设置-----URL重写</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/6e39f567ac3fd565ddd78644c948f3c7" alt="" /></p>
+<table width='100%' class='codestyle'><pre><code>格式：
+ ^http://kangleweb.com/(.*)$        https://www.kangleweb.com/$1</code></pre></table>
+<p>下面是站点里所有域名都跳转到https</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/e76383071ed1367c30628d39a2bcb09c" alt="" /></p>
+<table width='100%' class='codestyle'><pre><code>格式：
+^http://(.*)              https://$1</code></pre></table>
+<p>内部跳转的示例：
+比如使用CDN的是www.a.com,然后源的机器是没有捆绑www.a.com的，而是捆绑www.b.com的，就是www.a.com去读www.b.com的数据</p>
+<table width='100%' class='codestyle'><pre><code> 格式： 
+ http://www\.a\.com/(.*)         http://www.b.com/$1</code></pre></table>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/fbeeb096c392b89ffc7b4e29f9793e11" alt="" /></p>
+<p>url跳转全部都跳到一个指定端口：</p>
+<table width='100%' class='codestyle'><pre><code>http://([^:/]*)/(.*)    重写为 http://$1:8888/$2</code></pre></table>
+<p>以上格式只是一个例子，其他用法您可以自已多试试</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.9、站点应用防火墙设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>应用防火墙</strong></li>
+</ul>
+<p>1、防cc设置</p>
+<p>CC攻击是DDOS（分布式拒绝服务）的一种，相比其它的DDOS攻击CC似乎更有技术含量一些。这种攻击你见不到真实源IP，见不到特别大的异常流量，但造成服务器无法进行正常连接</p>
+<p>1.常规设置 防CC我们后台提供了四种选择，三种固定模式，只需要选择就行，还一种是自定义模式，可以根据情况自行修改频率和防御规则，提升防御效果
+防CC自定义模式代码：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/84ed8494acd3a22326b03a778ba43438" alt="" /></p>
+<p>2、白名单设置</p>
+<p>(1) .URL白名单如果有不想经过防CC规则的域名可以添加到URL白名单，访问含有这个URL地址的就不会经过            防CC的规则了.</p>
+<p>(2) .IP白名单和URL白名单功能相似，添加ip白名单后，只要是来源于这个IP的访问都不经过防CC规则</p>
+<p>(3) .白名单设置针对地理位置黑白名单设置也有效</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/375bda1f1182ec8d6e42046aa5d80b24" alt="" /></p>
+<p>3.地理位置黑白名单设置</p>
+<p>此功能可将区域加入黑白名单，设置方法：[如何设置区域地理位置线路  黑白名单](<a href="http://help2.cdnbest.co">http://help2.cdnbest.co</a>  m/document?id=35 "如何设置区域地理位置线路黑白名单")
+4、黑名单设置</p>
+<p>ip或url添加进黑名单后，来源此ip或ip段和url的访问将被拒绝访问</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/d88a6df68ecb38f79970b7a3616fa02d" alt="" /></p>
+<p>5、频率设置</p>
+<p>IP和URL组合：指的是针对某个IP+访问某特定 URL超过设定的次数就加入黑名单</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/dac960609a4c6ecbfc25919a92285aeb" alt="" /></p>
+<p>6、walf设置</p>
+<p>文件上传设置防上传的文件后缀名:输入防止上传的文件名后缀</p>
+<p>防XSS跨站攻击设置：开或关设置</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/aaa75eb663fa2fd8bf151c238066c4b8" alt="" /></p>
+<p>7、高级设置</p>
+<p>本操作为高级选项,如非必要,请勿操作.对规则不熟悉可在本地kangle管理界面(3311)的请求控制和回应控制中测试通过再到此处添加规则</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/ca16f88525bc64fc7a082cbe1e6afdd1" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.10、添加验证码防cc</h3><div style="margin-left:30px;"><ul>
+<li><strong>添加验证码防cc</strong></li>
+</ul>
+<p>登陆站点--》点应用防火墙--》防cc设置--》选择自定义，如图： 图中频率按自已的需求设置</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/22ffbe48ecb6b67b4c666e014a3d8346" alt="" /></p>
+<p>内容添加如下代码 注：下面两段代码直接复制，代码中间的空行要保留，否则代码添加无效</p>
+<table width='100%' class='codestyle'><pre><code>  HTTP/1.1 200 OK
+  Content-Type: text/html; charset=utf-8
+  Connection: close
+  Cache-Control: no-cache,no-store
+
+  <html><body>
+  <img width=500 src='/KANGLE_CCIMG.php?k={{session_key}}'>
+  <form action='/KANGLE_CCIMG.php' method='get'>
+  <input name='k' value='{{session_key}}' type='hidden'>
+  <input name='v' value=/>
+  <input type='submit'/>
+  </form>
+  </body></html></code></pre></table>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.11、自定义防CC代码</h3><div style="margin-left:30px;"><ul>
+<li><strong>自定义防CC代码</strong></li>
+</ul>
+<p>防CC代码模式有以下几种： 注：复制代码时代码中间一定要空一行，如下格式：
+1.http redirect（普通）</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 302 FOUND  
+Connection: keep-alive  
+Location: {{url}}  
+
+<html><body><a href="{{url}}">continue</a></body></html>  </code></pre></table>
+<p>2.html redirect</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><head><meta http-equiv="refresh" content="0;url={{url}}"></head><body><a href="{{url}}">continue</a></body></html></code></pre></table>
+<p>3.js plain</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body><script language="javascript">window.location="{{url}}";</script><a href="{{url}}">continue</a></body></html></code></pre></table>
+<p>4.js concat</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body><script language="javascript">window.location="{{murl}}";</script></body></html></code></pre></table>
+<p>5.js revert(复杂)</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body><script language="javascript">{{revert:url}};window.location=url;</script></body></html></code></pre></table>
+<p>6.html manual</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body><a href="{{url}}">continue</a></body></html>  </code></pre></table>
+<p>7.deny</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body>try again later</body></html></code></pre></table>
+<p>以上的模式都可以登陆节点的3311后台查看,如何登陆节点3311后台查看：
+登陆后点击请求控制-->标记模块-->anti_cc模块</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.12、设置token签名防盗链</h3><div style="margin-left:30px;"><ul>
+<li><strong>设置token签名防盗链</strong></li>
+</ul>
+<p>Token 防盗链是通过对时间有关的字符串进行签名，将时间、签名信息通过一定的方式传递给 CDN 节点服务器作为判定依据，CDN 边缘节点依据约定的算法判断来访的 URL 是否有访问权限。如果通过，执行下一步；如果不通过，响应 HTTP 403 状态码或者通过 302 跳转到其他 URL。</p>
+<p>下面我们介绍下cdn的设置部骤：
+进入cdn站点后，点击应用防火墙-->高级设置-->选择path_sign模块
+输入下面的配置：
+sign: _KS expire: _KE (过期时间戳 php中用time()获取 (这个时间是： Unix时间戳) key: test (key是自定义写的)</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/8df46fac4870cdef6d43d30dad3fe7e3" alt="" /></p>
+<p>图中file框框的意思是，是否带文件名
+比如 /test/aaa.html
+不勾path只算到目录 /test/
+勾选后path算目录+文件名 /test/aaa.html</p>
+<p>算法1不带IP验证：</p>
+<table width='100%' class='codestyle'><pre><code>md5(path+key+expire)        </code></pre></table>
+<p>举个例子：<br />
+md5(/11.jpgtest1469951574)<br />
+<a href="http://www.test.com/11.jpg?_KS=1678c4fd82b762ab304a40dab1e181ae&_KE=1469951574">http://www.test.com/11.jpg?_KS=1678c4fd82b762ab304a40dab1e181ae&_KE=1469951574</a><br />
+算法2带IP验证：</p>
+<table width='100%' class='codestyle'><pre><code>md5(path+key+expire+ip)</code></pre></table>
+<p>举个例子：
+计算md5：md5(/11.jpgtest1469953787ip127.0.0.1) （注意计算md5是带ip的格式是： ip127.0.0.1 ,如果访问报403，注意查看自已的公网ip是什么）
+访问的url: <a href="http://www.test.com/11.jpg?_KS=71b9c17ed08dda14d8402a78e4bc9342&_KE=1469953787ip">http://www.test.com/11.jpg?_KS=71b9c17ed08dda14d8402a78e4bc9342&_KE=1469953787ip</a> (注意结尾的unix时间后面是写ip两个字符不是写ip地址)</p>
+<p>以上两种算法也写了示例，cdn部分按上图设置就可以，接下来就是您的网站程序部分配合了。</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.13、控制添加的访问控制顺序</h3><div style="margin-left:30px;"><ul>
+<li><strong>控制添加的访问控制顺序</strong></li>
+</ul>
+<p>在站点设置中添加的规则都会同步cdn节点的请求控制和回应控制中，而同步到节点的规则运行是从上到下顺序执行，所以这个顺序没控制好，有些规则就不会起到相应的效果</p>
+<p>举例： 1. 我们在站点设置中添加了防CC和在高级设置中添加了一个url规则，如下图:</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/9b9f192c8c675b0a08a60c834d4dd581" alt="" /></p>
+<p>2.下图是站点设置规则同步到这个站点的请求控制中的顺序，url规则在上面，waf表在下面(waf表是引用的表，里面有防CC规则) 按从上到下运行规则，那就会先执行url规则后执行防CC规则，这样url的那条域名记录就没有被防CC保护到</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/9dcf5603b0a50bc458ff511c28bb7df3" alt="" /></p>
+<p>3.下面我们讲下如何控制顺序 如下图在添加高级设置时把编号设大些，以10万为起点(编号不能小于10万),例：100000,100001</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/b52ea91083930d39230ed473b5c8e88a" alt="" /></p>
+<p>4.我们再看下规则同步到cdn节点的顺序，新加的url规则就同步到waf表的下面了，这条域名在被访问时就会先经过防CC的规则的保护</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3d6b89cd23ecfa49d18ca798d7d7b7a1" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.14、域名如何带上端口访问</h3><div style="margin-left:30px;"><ul>
+<li><strong>域名如何带上端口访问</strong></li>
+</ul>
+<p>1.如果需要在域名访问时带上端口，需要先在cdn站点里开通相应的端口
+先在区域中添加允话站点设置的端口，如下图：区域列表-->添加端口</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/8e2b3228a64e95c27d1411209abb28c8" alt="" /></p>
+<p>2.登陆站点，点击站点设置，如图设置开通需要的端口，如果是https要在端口的后面加上s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/c228d0aa27c2882ed01fe93c3f015791" alt="" /></p>
+<p>3.添加记录，和源ip的通信用哪个端口就在ip后面加上端口，如果是https要在端口的后面加上s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/2e892c3136bb330a326f6d2755d2b1a3" alt="" /></p>
+<p>4.然后在访问时在域名后面加上端口就能访问了
+<a href="http://www.test.com:888">http://www.test.com:888</a></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.15、一个域名和源匹配多个端口配置(端口映射)</h3><div style="margin-left:30px;"><ul>
+<li><strong>一个域名和源匹配多个端口配置(端口映射)</strong></li>
+</ul>
+<p>应用场景：比如test.com这个域名要同时支持用888和999访问
+1.先在区域列表中设置站点允话开通的端口</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/bc49cdabe25582f979ce68f37c471a66" alt="" /></p>
+<p>2.在cdn的站点设置里开好888和999端口，还有源服务器也要同时开通888和999端口
+添加源的端口时如果是https，在端口后面加s, 例：888s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/a7c7adbed5adb0053824166e82e4e866" alt="" /></p>
+<p>3.在记录管理里添加好相应的两条记录，并点击编辑的图标
+注：和源Ip通信如果是用https，端口后要加s,例如：7.7.7.7:888s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/7b9753faa34b105ee03bd50fb49b9dab" alt="" /></p>
+<p>4.在弹出的界面点开端口映射,并设置错误重试时间和重试次数
+注：下图中的端口映射要添加两条相同的域名记录才会出现</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/e749c5dd2ba70a788c7753018d9e84e1" alt="" /></p>
+<p>5.然后在浏览器中域名带端口访问就能匹配对应的源端口</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.16、批量添加url(301/302)跳转</h3><div style="margin-left:30px;"><ul>
+<li><strong>批量添加url(301/302)跳转</strong></li>
+</ul>
+<p>进入一个站点，添加域名，在IP栏下面直接输入code(301或302)加跳转的url，点击确定即可。如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/e26928105c48b8c098b4dbd5ea4da2ca" alt="" /></p>
+<p>也可以批量添加，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/43061413be85e212c214c1fce8655b23" alt="" /></p>
+<p>这样就可以实现访问域名跳转了</p>
+<p>如果需要跳转到https，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/66daa49ccb9fc76caf9ddc90a16e87f1" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.17、Cdn设置负载均衡</h3><div style="margin-left:30px;"><ul>
+<li><strong>Cdn设置负载均衡</strong></li>
+</ul>
+<p>当一个站点域名有多个源时，需要做负载均衡，可如下图设置：</p>
+<p>假如是有两个源，就如下图添加</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/990643465020205ea660d73e906daf52" alt="" /></p>
+<p>可以给记录设置权重，比如权重2，就意思占百分之20 ，数字越大，优先级越大，点击上图操作下面的笔芯按钮</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/33e16bcfec696acd824b40b52f0fb8a1" alt="" /></p>
+<p>负载均衡设置：</p>
+<p>策略选择哈希，如下图设置</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/4c9bb2d30e9f83a0eac90873213783b4" alt="" /></p>
+<p>Ip哈希:
+基于ip的稳定连接。使得来源机器的会话是持续的。
+即：每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题
+对于一个特定的请求，如果所申请的服务器不能进行处理的话，其他的服务器可以马上取代它的位置，对所申请的请求进行处理，而且这一过程对用户感觉来说，服务是稳定的！</p>
+<p>url_hash: url_hash和ip_hash的意思差不多，只是这个是基于url。还有如果用户访问的源是挂掉的，同样会去自动访问第二个源</p>
+<p>错误重试时间（秒）：
+如果某个节点服务器连不上，自动会从其它节点服务器上连接。每隔设定的错误重试时间，又会尝试去连接该节点服务器。</p>
+<p>连接错误次数
+当某个节点服务器没连通，系统会把分配给该节点服务的请求转给其它节点服务，同时每隔设定的错误重试时间会自动去连接该节点。
+发现能连通，作上线处理。反之，没连通并且连续连接错误次数达到“连接错误次数设定值”后，cdnbest会认为这台节点有故障，并作下线处理。节点作下线处理后，cdnbest不会再把请求发送到该节点。</p>
+<p>策略选择随机，表示除了哈希的其他策略。</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h2>1.2.6.1、SSL证书相关</h2><div style="margin-left:0px;"><h3>1.2.6.1.1、站点设置功能介绍</h3><div style="margin-left:30px;"><ul>
+<li><strong>站点设置功能介绍</strong></li>
+</ul>
+<p>站点设置可以对当前站点进行设置，比如https,缓存，url重写，防盗链等，具体看下在介绍：</p>
+<p>1.https设置: 三种添加ssl证书的方法
+在下图中加入ssl证书，证书格式兼容nginx的ssl证书格式</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/f6464ce7c31c8213efe15de76c6114ea" alt="" /></p>
+<p>2.长连接：
+长连接多用于操作频繁，点对点的通讯，而且连接数不能太多情况。每个TCP连接都需要三步握手，这需要时间，如果每个操作都是短连接，再操作的话那么处理速度会降低很多，所以每个操作完后都不断开，下次处理时直接发送数据包就OK了，不用建立TCP连接
+开启长连接后cdn节点和源服务器之间采用长连接通信，提高性能，缩短打开页面时间，时间建议设置为5-10秒之间
+如下图在站点设置中设置长连接</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/5413675490dd9db85d9c3a482c4fa488" alt="" /></p>
+<p>3.缓存设置：
+在缓存设置中可以站点的缓存时间，并且可以针对站点开启强制缓存
+清除：当点击清除后，会清空当前站点的所有缓存
+刷新：当站点缓存设置缓存时间为3600秒，缓存未到期前，点击刷新会重新检测源站是否有更新，如果有更新 ，即使在缓存时间未到期，访问网站也会到源获取新的内容
+注:在这里设置缓存前，必须节点先配置好缓存大小：节点配置缓存大小
+使用案例：</p>
+<p>如何开启强制缓存
+如何设置整个站点不缓存
+如何不缓存某条url记录
+如何查看网站是否被缓存</p>
+<p>下图中勾选了强制本地为强制缓存</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3cbc012827c419f87add296a91f00ae9" alt="" /></p>
+<p>4.开启gzip压缩：
+开启gzip压缩，先勾选相关参数，再点提交就可以</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3c3650d04d6d23c93c65291e8bbeb2a9" alt="" /></p>
+<p>5.URL重写：
+url的301和302跳转如下图设置就可以，详细可参考：url跳转</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/e5434d9b0685f91a5fa8d55abe0b39cd" alt="" /></p>
+<p>6.防盗链：</p>
+<p>示例 ：
+1.白名单设置：
+需求 : www.abc.com域名需要防盗链，仅允许来源于www.test.com的网址可以访问，其他网站链接全部拒绝。如下图：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/da92931e0800b898afbf97a81e7bc414" alt="" /></p>
+<p>空路由匹配是在来源输入中杠 -</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/fca8db2931e0a0591a221e22aaa5c0f9" alt="" /></p>
+<p>2.黑名单设置：
+需求：要禁止来源于www.test.com的链接访问www.abc.com，如下图：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/018080e5f0a130e5fbee72d3ec318a57" alt="" /></p>
+<p>7.限速：
+限速分为每连接、每节点、每IP限速
+(1).每连接
+每连接限速只针对当前连接
+点设置，在url输入框中输入要限速的url网址(支持正则表达式)和速度</p>
+<p>(2).每节点
+每节点限速针对来源于此url的所有连接
+点设置，在url输入框中输入要限速的url网址(支持正则表达式)和速度</p>
+<p>(3).每IP
+每ip限速：每ip限速针对于访问此url的ip
+点设置，在url正则输入框输入要限速的ip和速度</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/baa6175d52ae4a883d18ffbfd3cb3c38" alt="" /></p>
+<p>8.端口设置：
+端口设置可以给站点开通需要使用的端口，多个端口中间用逗号分隔，https端口记得带上s 参考示例</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/f481832fbdfdca93cd93e9a8aa1b46e5" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、站点设置里自定义端口</h3><div style="margin-left:30px;"><ul>
+<li><strong>站点设置里自定义端口</strong></li>
+</ul>
+<p>用户如果需要用到其他的端口，比如：<a href="http://www.test.com:8080">http://www.test.com:8080</a> ,可以如下图设置开启端口
+每个端口中间要用逗号隔开
+注：下图加了两个端口8080这是http端口
+要用https端口就要像下图中一样，在端口后面加上s ,并且站点设置中要添加好ssl证书，例如：999s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/dc93bafde1d396325e2c5649717c272e" alt="" /></p>
+<p>站点自定义端口需要到区域开放这个端口，否则会报错，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/460cd9cb058e576dfe916f0cf9de5aa7" alt="" /></p>
+<p>选择站点所在区域开放端口，区域列表----端口，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/72d9c21f31695e7ba096b58c48831e73" alt="" />
+<img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/15047a2c38a2c43523658319ceaaae0a" alt="" /></p>
+<p>注意：端口选择正确的端口类型，上面8080是http端口，999是https端口</p>
+<p>设置完成后，就可以到站点里面自定义端口了</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、站点开启强制缓存</h3><div style="margin-left:30px;"><ul>
+<li><strong>站点开启强制缓存</strong></li>
+</ul>
+<p>在站点设置中如下图设置：</p>
+<p>强制缓存有两种方式，一种是文件类型，一种是url方式
+下图是以文件类型为例，输入需要强制缓存的文件扩展名，多个以竖线隔开
+设置缓存时间，单位是秒，然后要记得勾选强制缓存</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/d1227fc88d57c58a7c42719b6cd14420" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：post方法的不能缓存，因为post需要上传数据，只能缓存get方法的。</li>
+</ul></div><h3>1.2.6.1.1、设置整个站点不缓存</h3><div style="margin-left:30px;"><ul>
+<li><strong>设置整个站点不缓存</strong></li>
+</ul>
+<p>想要部分站点不缓存只需要在站点设置中把缓存时间设为0即可，这样不会影响到其他的站点缓存。</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/70561c5c2d6cd43af7a245ab6cda1d52" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、不缓存某条url记录</h3><div style="margin-left:30px;"><ul>
+<li><strong>不缓存某条url记录</strong></li>
+</ul>
+<p>如果需要单独对一条url记录不缓存，配置方法如下：</p>
+<ol>
+<li>在站点设置的缓存策略，添加规则，如下图输入，注意缓存的时间要设为0</li>
+</ol>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/db9688e0255fc26f154d5b8073212ea3" alt="" /></p>
+<p>2.配置好后，我们可以验证下X-Cache显示MISS就是没有缓存了</p>
+<table width='100%' class='codestyle'><pre><code>X-Cache：MISS from yn-190</code></pre></table>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/92c2944c640c6e93ab701fabbca0564a" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、查看网站是否被缓存</h3><div style="margin-left:30px;"><ul>
+<li><strong>查看网站是否被缓存</strong></li>
+</ul>
+<p>比如开启了强制缓存，如何查看缓存是否生效 本例以firefox浏览器查看，先打开浏览器，按下F12, 然后在浏览器是输入网址访问</p>
+<p>如下图响应头里的 x-cache显示 Miss from 就是没有缓存</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/c7b6c99da144467552fd21a9f67c5094" alt="" /></p>
+<p>如下图x-cache显示HIT from就是缓存了</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/25d7424bd00244b888140ebd725f5a6d" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、批量操作站点</h3><div style="margin-left:30px;"><ul>
+<li><strong>批量操作站点</strong></li>
+</ul>
+<p>如下图勾选或全选要修改的站点，然后点批量操作</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/2fc0328889a8bfc8428133afaa98a774" alt="" /></p>
+<p>选择要批量操作的选项进行修改，修改其它选项也是一样的方法</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/73e178a7b41995f57813b6569f9651d1" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、Cdn如何站点设置中添加301跳转</h3><div style="margin-left:30px;"><ul>
+<li><strong>Cdn如何站点设置中添加301跳转</strong></li>
+</ul>
+<p>url跳转方式支持正则表达式，以下是两种跳转的案例示范：</p>
+<p>进入站点----站点设置-----URL重写</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/6e39f567ac3fd565ddd78644c948f3c7" alt="" /></p>
+<table width='100%' class='codestyle'><pre><code>格式：
+ ^http://kangleweb.com/(.*)$        https://www.kangleweb.com/$1</code></pre></table>
+<p>下面是站点里所有域名都跳转到https</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/e76383071ed1367c30628d39a2bcb09c" alt="" /></p>
+<table width='100%' class='codestyle'><pre><code>格式：
+^http://(.*)              https://$1</code></pre></table>
+<p>内部跳转的示例：
+比如使用CDN的是www.a.com,然后源的机器是没有捆绑www.a.com的，而是捆绑www.b.com的，就是www.a.com去读www.b.com的数据</p>
+<table width='100%' class='codestyle'><pre><code> 格式： 
+ http://www\.a\.com/(.*)         http://www.b.com/$1</code></pre></table>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/fbeeb096c392b89ffc7b4e29f9793e11" alt="" /></p>
+<p>url跳转全部都跳到一个指定端口：</p>
+<table width='100%' class='codestyle'><pre><code>http://([^:/]*)/(.*)    重写为 http://$1:8888/$2</code></pre></table>
+<p>以上格式只是一个例子，其他用法您可以自已多试试</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、站点应用防火墙设置</h3><div style="margin-left:30px;"><ul>
+<li><strong>应用防火墙</strong></li>
+</ul>
+<p>1、防cc设置</p>
+<p>CC攻击是DDOS（分布式拒绝服务）的一种，相比其它的DDOS攻击CC似乎更有技术含量一些。这种攻击你见不到真实源IP，见不到特别大的异常流量，但造成服务器无法进行正常连接</p>
+<p>1.常规设置 防CC我们后台提供了四种选择，三种固定模式，只需要选择就行，还一种是自定义模式，可以根据情况自行修改频率和防御规则，提升防御效果
+防CC自定义模式代码：</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/84ed8494acd3a22326b03a778ba43438" alt="" /></p>
+<p>2、白名单设置</p>
+<p>(1) .URL白名单如果有不想经过防CC规则的域名可以添加到URL白名单，访问含有这个URL地址的就不会经过            防CC的规则了.</p>
+<p>(2) .IP白名单和URL白名单功能相似，添加ip白名单后，只要是来源于这个IP的访问都不经过防CC规则</p>
+<p>(3) .白名单设置针对地理位置黑白名单设置也有效</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/375bda1f1182ec8d6e42046aa5d80b24" alt="" /></p>
+<p>3.地理位置黑白名单设置</p>
+<p>此功能可将区域加入黑白名单，设置方法：[如何设置区域地理位置线路  黑白名单](<a href="http://help2.cdnbest.co">http://help2.cdnbest.co</a>  m/document?id=35 "如何设置区域地理位置线路黑白名单")
+4、黑名单设置</p>
+<p>ip或url添加进黑名单后，来源此ip或ip段和url的访问将被拒绝访问</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/d88a6df68ecb38f79970b7a3616fa02d" alt="" /></p>
+<p>5、频率设置</p>
+<p>IP和URL组合：指的是针对某个IP+访问某特定 URL超过设定的次数就加入黑名单</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/dac960609a4c6ecbfc25919a92285aeb" alt="" /></p>
+<p>6、walf设置</p>
+<p>文件上传设置防上传的文件后缀名:输入防止上传的文件名后缀</p>
+<p>防XSS跨站攻击设置：开或关设置</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/aaa75eb663fa2fd8bf151c238066c4b8" alt="" /></p>
+<p>7、高级设置</p>
+<p>本操作为高级选项,如非必要,请勿操作.对规则不熟悉可在本地kangle管理界面(3311)的请求控制和回应控制中测试通过再到此处添加规则</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/ca16f88525bc64fc7a082cbe1e6afdd1" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、添加验证码防cc</h3><div style="margin-left:30px;"><ul>
+<li><strong>添加验证码防cc</strong></li>
+</ul>
+<p>登陆站点--》点应用防火墙--》防cc设置--》选择自定义，如图： 图中频率按自已的需求设置</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/22ffbe48ecb6b67b4c666e014a3d8346" alt="" /></p>
+<p>内容添加如下代码 注：下面两段代码直接复制，代码中间的空行要保留，否则代码添加无效</p>
+<table width='100%' class='codestyle'><pre><code>  HTTP/1.1 200 OK
+  Content-Type: text/html; charset=utf-8
+  Connection: close
+  Cache-Control: no-cache,no-store
+
+  <html><body>
+  <img width=500 src='/KANGLE_CCIMG.php?k={{session_key}}'>
+  <form action='/KANGLE_CCIMG.php' method='get'>
+  <input name='k' value='{{session_key}}' type='hidden'>
+  <input name='v' value=/>
+  <input type='submit'/>
+  </form>
+  </body></html></code></pre></table>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、自定义防CC代码</h3><div style="margin-left:30px;"><ul>
+<li><strong>自定义防CC代码</strong></li>
+</ul>
+<p>防CC代码模式有以下几种： 注：复制代码时代码中间一定要空一行，如下格式：
+1.http redirect（普通）</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 302 FOUND  
+Connection: keep-alive  
+Location: {{url}}  
+
+<html><body><a href="{{url}}">continue</a></body></html>  </code></pre></table>
+<p>2.html redirect</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><head><meta http-equiv="refresh" content="0;url={{url}}"></head><body><a href="{{url}}">continue</a></body></html></code></pre></table>
+<p>3.js plain</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body><script language="javascript">window.location="{{url}}";</script><a href="{{url}}">continue</a></body></html></code></pre></table>
+<p>4.js concat</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body><script language="javascript">window.location="{{murl}}";</script></body></html></code></pre></table>
+<p>5.js revert(复杂)</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body><script language="javascript">{{revert:url}};window.location=url;</script></body></html></code></pre></table>
+<p>6.html manual</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body><a href="{{url}}">continue</a></body></html>  </code></pre></table>
+<p>7.deny</p>
+<table width='100%' class='codestyle'><pre><code>HTTP/1.1 200 OK  
+Content-Type: text/html; charset=utf-8  
+Connection: keep-alive  
+Cache-Control: no-cache,no-store  
+
+<html><body>try again later</body></html></code></pre></table>
+<p>以上的模式都可以登陆节点的3311后台查看,如何登陆节点3311后台查看：
+登陆后点击请求控制-->标记模块-->anti_cc模块</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、设置token签名防盗链</h3><div style="margin-left:30px;"><ul>
+<li><strong>设置token签名防盗链</strong></li>
+</ul>
+<p>Token 防盗链是通过对时间有关的字符串进行签名，将时间、签名信息通过一定的方式传递给 CDN 节点服务器作为判定依据，CDN 边缘节点依据约定的算法判断来访的 URL 是否有访问权限。如果通过，执行下一步；如果不通过，响应 HTTP 403 状态码或者通过 302 跳转到其他 URL。</p>
+<p>下面我们介绍下cdn的设置部骤：
+进入cdn站点后，点击应用防火墙-->高级设置-->选择path_sign模块
+输入下面的配置：
+sign: _KS expire: _KE (过期时间戳 php中用time()获取 (这个时间是： Unix时间戳) key: test (key是自定义写的)</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/8df46fac4870cdef6d43d30dad3fe7e3" alt="" /></p>
+<p>图中file框框的意思是，是否带文件名
+比如 /test/aaa.html
+不勾path只算到目录 /test/
+勾选后path算目录+文件名 /test/aaa.html</p>
+<p>算法1不带IP验证：</p>
+<table width='100%' class='codestyle'><pre><code>md5(path+key+expire)        </code></pre></table>
+<p>举个例子：<br />
+md5(/11.jpgtest1469951574)<br />
+<a href="http://www.test.com/11.jpg?_KS=1678c4fd82b762ab304a40dab1e181ae&_KE=1469951574">http://www.test.com/11.jpg?_KS=1678c4fd82b762ab304a40dab1e181ae&_KE=1469951574</a><br />
+算法2带IP验证：</p>
+<table width='100%' class='codestyle'><pre><code>md5(path+key+expire+ip)</code></pre></table>
+<p>举个例子：
+计算md5：md5(/11.jpgtest1469953787ip127.0.0.1) （注意计算md5是带ip的格式是： ip127.0.0.1 ,如果访问报403，注意查看自已的公网ip是什么）
+访问的url: <a href="http://www.test.com/11.jpg?_KS=71b9c17ed08dda14d8402a78e4bc9342&_KE=1469953787ip">http://www.test.com/11.jpg?_KS=71b9c17ed08dda14d8402a78e4bc9342&_KE=1469953787ip</a> (注意结尾的unix时间后面是写ip两个字符不是写ip地址)</p>
+<p>以上两种算法也写了示例，cdn部分按上图设置就可以，接下来就是您的网站程序部分配合了。</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、控制添加的访问控制顺序</h3><div style="margin-left:30px;"><ul>
+<li><strong>控制添加的访问控制顺序</strong></li>
+</ul>
+<p>在站点设置中添加的规则都会同步cdn节点的请求控制和回应控制中，而同步到节点的规则运行是从上到下顺序执行，所以这个顺序没控制好，有些规则就不会起到相应的效果</p>
+<p>举例： 1. 我们在站点设置中添加了防CC和在高级设置中添加了一个url规则，如下图:</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/9b9f192c8c675b0a08a60c834d4dd581" alt="" /></p>
+<p>2.下图是站点设置规则同步到这个站点的请求控制中的顺序，url规则在上面，waf表在下面(waf表是引用的表，里面有防CC规则) 按从上到下运行规则，那就会先执行url规则后执行防CC规则，这样url的那条域名记录就没有被防CC保护到</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/9dcf5603b0a50bc458ff511c28bb7df3" alt="" /></p>
+<p>3.下面我们讲下如何控制顺序 如下图在添加高级设置时把编号设大些，以10万为起点(编号不能小于10万),例：100000,100001</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/b52ea91083930d39230ed473b5c8e88a" alt="" /></p>
+<p>4.我们再看下规则同步到cdn节点的顺序，新加的url规则就同步到waf表的下面了，这条域名在被访问时就会先经过防CC的规则的保护</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/3d6b89cd23ecfa49d18ca798d7d7b7a1" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、域名如何带上端口访问</h3><div style="margin-left:30px;"><ul>
+<li><strong>域名如何带上端口访问</strong></li>
+</ul>
+<p>1.如果需要在域名访问时带上端口，需要先在cdn站点里开通相应的端口
+先在区域中添加允话站点设置的端口，如下图：区域列表-->添加端口</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/8e2b3228a64e95c27d1411209abb28c8" alt="" /></p>
+<p>2.登陆站点，点击站点设置，如图设置开通需要的端口，如果是https要在端口的后面加上s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/c228d0aa27c2882ed01fe93c3f015791" alt="" /></p>
+<p>3.添加记录，和源ip的通信用哪个端口就在ip后面加上端口，如果是https要在端口的后面加上s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/2e892c3136bb330a326f6d2755d2b1a3" alt="" /></p>
+<p>4.然后在访问时在域名后面加上端口就能访问了
+<a href="http://www.test.com:888">http://www.test.com:888</a></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、一个域名和源匹配多个端口配置(端口映射)</h3><div style="margin-left:30px;"><ul>
+<li><strong>一个域名和源匹配多个端口配置(端口映射)</strong></li>
+</ul>
+<p>应用场景：比如test.com这个域名要同时支持用888和999访问
+1.先在区域列表中设置站点允话开通的端口</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/bc49cdabe25582f979ce68f37c471a66" alt="" /></p>
+<p>2.在cdn的站点设置里开好888和999端口，还有源服务器也要同时开通888和999端口
+添加源的端口时如果是https，在端口后面加s, 例：888s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/a7c7adbed5adb0053824166e82e4e866" alt="" /></p>
+<p>3.在记录管理里添加好相应的两条记录，并点击编辑的图标
+注：和源Ip通信如果是用https，端口后要加s,例如：7.7.7.7:888s</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/7b9753faa34b105ee03bd50fb49b9dab" alt="" /></p>
+<p>4.在弹出的界面点开端口映射,并设置错误重试时间和重试次数
+注：下图中的端口映射要添加两条相同的域名记录才会出现</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/e749c5dd2ba70a788c7753018d9e84e1" alt="" /></p>
+<p>5.然后在浏览器中域名带端口访问就能匹配对应的源端口</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、批量添加url(301/302)跳转</h3><div style="margin-left:30px;"><ul>
+<li><strong>批量添加url(301/302)跳转</strong></li>
+</ul>
+<p>进入一个站点，添加域名，在IP栏下面直接输入code(301或302)加跳转的url，点击确定即可。如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/e26928105c48b8c098b4dbd5ea4da2ca" alt="" /></p>
+<p>也可以批量添加，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/43061413be85e212c214c1fce8655b23" alt="" /></p>
+<p>这样就可以实现访问域名跳转了</p>
+<p>如果需要跳转到https，如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/66daa49ccb9fc76caf9ddc90a16e87f1" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.2.6.1.1、Cdn设置负载均衡</h3><div style="margin-left:30px;"><ul>
+<li><strong>Cdn设置负载均衡</strong></li>
+</ul>
+<p>当一个站点域名有多个源时，需要做负载均衡，可如下图设置：</p>
+<p>假如是有两个源，就如下图添加</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/990643465020205ea660d73e906daf52" alt="" /></p>
+<p>可以给记录设置权重，比如权重2，就意思占百分之20 ，数字越大，优先级越大，点击上图操作下面的笔芯按钮</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/33e16bcfec696acd824b40b52f0fb8a1" alt="" /></p>
+<p>负载均衡设置：</p>
+<p>策略选择哈希，如下图设置</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/4c9bb2d30e9f83a0eac90873213783b4" alt="" /></p>
+<p>Ip哈希:
+基于ip的稳定连接。使得来源机器的会话是持续的。
+即：每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题
+对于一个特定的请求，如果所申请的服务器不能进行处理的话，其他的服务器可以马上取代它的位置，对所申请的请求进行处理，而且这一过程对用户感觉来说，服务是稳定的！</p>
+<p>url_hash: url_hash和ip_hash的意思差不多，只是这个是基于url。还有如果用户访问的源是挂掉的，同样会去自动访问第二个源</p>
+<p>错误重试时间（秒）：
+如果某个节点服务器连不上，自动会从其它节点服务器上连接。每隔设定的错误重试时间，又会尝试去连接该节点服务器。</p>
+<p>连接错误次数
+当某个节点服务器没连通，系统会把分配给该节点服务的请求转给其它节点服务，同时每隔设定的错误重试时间会自动去连接该节点。
+发现能连通，作上线处理。反之，没连通并且连续连接错误次数达到“连接错误次数设定值”后，cdnbest会认为这台节点有故障，并作下线处理。节点作下线处理后，cdnbest不会再把请求发送到该节点。</p>
+<p>策略选择随机，表示除了哈希的其他策略。</p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div></div></div><h2>1.2.8、域名列表</h2><div style="margin-left:0px;"><h3>1.2.8.1、查找域名</h3><div style="margin-left:30px;"><ul>
+<li><strong>查找域名</strong></li>
+</ul>
+<p>可以通过域名或者站点名的方式查找相应的域名</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/6f8f2c46ab80b5f6847450dc8a78e269" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div></div><h2>1.2.9、站点配置</h2><div style="margin-left:0px;"><h3>1.2.9.1、站点配置</h3><div style="margin-left:30px;"><ul>
+<li><strong>站点配置</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/227920de30805858c38b4ec12a6b176a" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：站点所有的操作都在此处展示</li>
+</ul></div></div><h2>1.2.10、访问排行</h2><div style="margin-left:0px;"><h3>1.2.10.1、访问排行</h3><div style="margin-left:30px;"><ul>
+<li><strong>访问排行</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/ee7fdca0c7735a699bc120ee6cb4c7df" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：对每个站点的流量进行一个排名,可分时间段进行排列。</li>
+</ul></div></div><h2>1.2.11、SSL管理</h2><div style="margin-left:0px;"><h3>1.2.11.1、SSL管理</h3><div style="margin-left:30px;"><ul>
+<li><strong>SSL管理</strong></li>
+</ul>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/d1bc5ab92fab630ee466c816b49e5cd3" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：管理统计SSL的所有信息</li>
+</ul></div></div></div><h2>1.3、账号管理</h2><div style="margin-left:20px;"><h3>1.3.1、密码修改</h3><div style="margin-left:0px;"><ul>
+<li><strong>密码修改</strong></li>
+</ul>
+<p>登陆用户帐号后，如下图修改用户密码</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/4de0768ae12f39616d5a973dea0023ce" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.3.2、日志信息</h3><div style="margin-left:0px;"><ul>
+<li><strong>日志信息</strong></li>
+</ul>
+<p>可以查询充值消费日志，登录/操作日志，dns操作日志，流量计费 ，流量统计。如下图</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/03aa30867ee7f1a45335526d82bb37be" alt="" /></p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/a3e26146a98a24c97cbbdc6239cecf7d" alt="" /></p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/bdc02574e12e5f3d7d6b9c1ccb6c3431" alt="" /></p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/efe1b7bc8a71b1c6f2f2997c8ae428c4" alt="" /></p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/c21f1e305ab4492913ea75f0c2378d06" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div></div><h2>1.4、权限管理</h2><div style="margin-left:20px;"><h3>1.4.1、角色设置</h3><div style="margin-left:0px;"><ul>
+<li><strong>角色设置</strong></li>
+</ul>
+<p>可以新建角色，设置角色所属的权限</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/fe52a2ba6f8088f359f100b8d3d48508" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：无</li>
+</ul></div><h3>1.4.2、子账号设置</h3><div style="margin-left:0px;"><ul>
+<li><strong>子账号设置</strong></li>
+</ul>
+<p>1.先加好角色权限</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/afa5b86121538bf7daee894f8b66ad6b" alt="" /></p>
+<p>2.然后如下图添加子帐号</p>
+<p><img width=500 src="http://54.151.143.251:4999/server/index.php?s=/api/attachment/visitFile/sign/25d1e5ce080467e14c24e406a4b9cb94" alt="" /></p>
+<ul>
+<li><strong>备注</strong>：java版本增加分区域设置子账号功能，分配区域只能选择某个个区域，如果选择了其中一个个区域，就无法看到其他区域里的节点。</li>
+</ul></div></div></div></body></html>
