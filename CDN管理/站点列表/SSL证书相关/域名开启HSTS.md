@@ -1,4 +1,5 @@
-域名开启HSTS
+### 域名开启HSTS
+
 HSTS介绍：
 
 国际互联网工程组织IETE正在推行一种新的Web安全协议HTTP Strict Transport Security（HSTS）
@@ -9,9 +10,9 @@ HSTS介绍：
 
 HSTS的作用是强制客户端（如浏览器）使用HTTPS与服务器创建连接。服务器开启HSTS的方法是，当客户端通过HTTPS发出请求时，在服务器返回的超文本传输协议响应头中包含Strict-Transport-Security字段。非加密传输时设置的HSTS字段无效。
 
-比如，https://xxx 的响应头含有Strict-Transport-Security: max-age=31536000; includeSubDomains。这意味着两点：
+比如，```https://xxx``` 的响应头含有Strict-Transport-Security: max-age=31536000; includeSubDomains。这意味着两点：
 
-在接下来的一年（即31536000秒）中，浏览器只要向xxx或其子域名发送HTTP请求时，必须采用HTTPS来发起连接。比如，用户点击超链接或在地址栏输入 http://xxx/ ，浏览器应当自动将 http 转写成 https，然后直接向 https://xxx/ 发送请求。
+在接下来的一年（即31536000秒）中，浏览器只要向xxx或其子域名发送HTTP请求时，必须采用HTTPS来发起连接。比如，用户点击超链接或在地址栏输入 ```http://xxx/``` ，浏览器应当自动将 http 转写成 https，然后直接向 ```https://xxx/``` 发送请求。
 
 在接下来的一年中，如果 xxx 服务器发送的TLS证书无效，用户不能忽略浏览器警告继续访问网站
 
@@ -37,6 +38,6 @@ HSTS有效期可以自定义
 
 设置自定义有效期后，可以访问域名，按F12查看是否自定义成功，如下图
 
-![Uploading image.png…]()
+![20200427112253a04ecfec361d1f474940b2473e06d04f](https://user-images.githubusercontent.com/90588289/134650004-f7244497-1ca7-4857-9aff-ec1874c88182.png)
 
 备注：无
