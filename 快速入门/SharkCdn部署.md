@@ -1,14 +1,14 @@
-#### cdn配置部骤流程图:
+### cdn配置部骤流程图:
 
 ![image](https://user-images.githubusercontent.com/90588289/134606462-0cc3014d-b8c1-416d-8f88-291e4753e271.png)
 
-#### 第一步： 配置DNS接入
+### 第一步： 配置DNS接入
 
 ![image](https://user-images.githubusercontent.com/90588289/134446404-8fcee193-0fc9-4387-9c74-0629edf3ce97.png)
 
 接入文档：[DNS接入](zh-cn/SharkCdnDoc/系统管理/系统设置/DNS接入.md)
 
-#### 第二步：增加区域和增加节点
+### 第二步：增加区域和增加节点
 
 (1).新增一个区域
 
@@ -46,7 +46,7 @@
 
 ![image](https://user-images.githubusercontent.com/90588289/134446533-35b1f317-4c28-4e53-8659-3c3a320ae742.png)
 
-#### 第三步：分组解析
+### 第三步：分组解析
 
 在分组解析中启用相应的节点ip(分组可自行新增，同一区域下的节点可在不同分组中共用)，
 
@@ -60,7 +60,7 @@
 
 ![image](https://user-images.githubusercontent.com/90588289/134446561-a644de98-b3cf-460f-94da-cecd86c67d6b.png)
 
-#### 第四步：新增产品
+### 第四步：新增产品
 
 如下图点击新增产品，根据自已需求设置产品
 
@@ -72,19 +72,19 @@
 
 立即配置：[添加产品](zh-cn/SharkCdnDoc/CDN管理/产品列表/添加产品.md)
 
-#### 第五步：新增站点
+### 第五步：新增站点
 
 如下图点击增加站点
 
 ![image](https://user-images.githubusercontent.com/90588289/134446595-d4ac24fc-ce07-4792-a1dc-16311b8b57a2.png)
 
-#### 第六步：登陆站点
+### 第六步：登陆站点
 
 点击站点列表，点击站点名登录
 
 ![image](https://user-images.githubusercontent.com/90588289/134446615-dea979b0-4210-4f60-b7a3-63b4e964eb10.png)
 
-#### 第七步：添加域名
+### 第七步：添加域名
 
 记录管理--添加域名，域名是写要做cdn的域名，IP是写源服务器IP, CNAME系统会自动生成
 
