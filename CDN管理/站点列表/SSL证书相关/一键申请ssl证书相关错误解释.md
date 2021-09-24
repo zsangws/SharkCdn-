@@ -90,7 +90,7 @@ sh /vhs2/boot.sh
 
 错误原因：无法获取正确的域名验证信息
 
-解决方式：使用 ``https://transparencyreport.google.com/safe-browsing/search``` 查看域名存在的安全隐患，按照说明进行清理，清理完后到 ```https://www.stopbadware.org/``` 提交审查请求。审查通过后，回到 Coding Pages 重新申请证书
+解决方式：使用 ```https://transparencyreport.google.com/safe-browsing/search``` 查看域名存在的安全隐患，按照说明进行清理，清理完后到 ```https://www.stopbadware.org/``` 提交审查请求。审查通过后，回到 Coding Pages 重新申请证书
 
 错误类型：```urn:acme:error:unknownHost```
 
