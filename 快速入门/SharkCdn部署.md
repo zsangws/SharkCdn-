@@ -88,7 +88,7 @@
 
 记录管理--添加域名，域名是写要做cdn的域名，IP是写源服务器IP, CNAME系统会自动生成
 
-然后到域名商那添加：www.test.com的cname解析到test.
+然后到域名商那添加：```www.test.com的cname解析到test```.
 
 ![image](https://user-images.githubusercontent.com/90588289/134446635-b28a9769-f67d-4d91-b21f-52d5421be052.png)
 
