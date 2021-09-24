@@ -2,7 +2,7 @@
 
 点击CDN管理--区域列表--配置--https设置
 
-![image](https://user-images.githubusercontent.com/90588289/134640459-31ff70cf-fed4-4fe4-af0a-2607e3a1e442.png)
+![image](https://user-images.githubusercontent.com/90588289/134640725-5eaee839-cfb0-46ea-8a09-5b977a62ef0b.png)
 
 配置ssl证书，兼容ng格式的证书，在下框中输入端口、域名证书和密钥，点击提交，算法协议可不填
 
