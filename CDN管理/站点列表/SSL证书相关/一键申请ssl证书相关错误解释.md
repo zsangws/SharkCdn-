@@ -1,4 +1,4 @@
--  **一键申请ssl证书相关错误解释**
+###  **一键申请ssl证书相关错误解释**
 
 证书申请失败首先需要排查的原因：
 
@@ -117,5 +117,3 @@ sh /vhs2/boot.sh
 错误信息：Error creating new authz :: Policy forbids issuing for name
 
 错误原因：相关政策禁止为此域名签发证书
-
-- **备注**：无
