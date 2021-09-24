@@ -1,27 +1,26 @@
-cdn配置部骤流程图:
+##### cdn配置部骤流程图:
 
-![image](https://user-images.githubusercontent.com/90588289/134446395-fe700210-b97a-46d9-acf9-0663d099333b.png)
+![image](https://user-images.githubusercontent.com/90588289/134606462-0cc3014d-b8c1-416d-8f88-291e4753e271.png)
 
-第一步： 配置DNS接入
+##### 第一步： 配置DNS接入
 
 ![image](https://user-images.githubusercontent.com/90588289/134446404-8fcee193-0fc9-4387-9c74-0629edf3ce97.png)
 
-[DNS接入](zh-cn/SharkCdnDoc/系统管理/系统设置/DNS接入.md)
+接入文档：[DNS接入](zh-cn/SharkCdnDoc/系统管理/系统设置/DNS接入.md)
 
-接入文档：
-第二步：增加区域和增加节点
+##### 第二步：增加区域和增加节点
 
 (1).新增一个区域
 
 ![image](https://user-images.githubusercontent.com/90588289/134446437-9523368c-6332-42b9-b774-be7e87d087ed.png)
 
-[添加区域](zh-cn/SharkCdnDoc/CDN管理/区域列表/添加区域.md)
+立即配置：[添加区域](zh-cn/SharkCdnDoc/CDN管理/区域列表/添加区域.md)
 
 (2). 点击CDN管理---节点列表---新增节点 会弹出节点的安装程序
 
 ![image](https://user-images.githubusercontent.com/90588289/134446455-cbb2c796-e881-4a96-bd0d-95742fdd42d6.png)
 
-[添加节点](zh-cn/SharkCdnDoc/CDN管理/节点列表/添加节点.md)
+立即配置：[添加节点](zh-cn/SharkCdnDoc/CDN管理/节点列表/添加节点.md)
 
 (3).linux服务器，直接复制下图脚本命令运行。windows服务器，下载对应版本到服务器上运行安装。
 
@@ -47,11 +46,11 @@ cdn配置部骤流程图:
 
 ![image](https://user-images.githubusercontent.com/90588289/134446533-35b1f317-4c28-4e53-8659-3c3a320ae742.png)
 
-第三步：分组解析
+##### 第三步：分组解析
 
 在分组解析中启用相应的节点ip(分组可自行新增，同一区域下的节点可在不同分组中共用)，
 
-[新建分组](zh-cn/SharkCdnDoc/CDN管理/分组解析/新建分组.md)
+立即配置：[新建分组](zh-cn/SharkCdnDoc/CDN管理/分组解析/新建分组.md)
 
 (1). 点击分组解析，进入分组
 
@@ -71,21 +70,21 @@ cdn配置部骤流程图:
 
 ![image](https://user-images.githubusercontent.com/90588289/134446579-23de9056-1b30-4245-9354-3f58dfd611c5.png)
 
-[添加产品](zh-cn/SharkCdnDoc/CDN管理/产品列表/添加产品.md)
+立即配置：[添加产品](zh-cn/SharkCdnDoc/CDN管理/产品列表/添加产品.md)
 
-第五步：新增站点
+##### 第五步：新增站点
 
 如下图点击增加站点
 
 ![image](https://user-images.githubusercontent.com/90588289/134446595-d4ac24fc-ce07-4792-a1dc-16311b8b57a2.png)
 
-第六步：登陆站点
+##### 第六步：登陆站点
 
 点击站点列表，点击站点名登录
 
 ![image](https://user-images.githubusercontent.com/90588289/134446615-dea979b0-4210-4f60-b7a3-63b4e964eb10.png)
 
-第七步：添加域名
+##### 第七步：添加域名
 
 记录管理--添加域名，域名是写要做cdn的域名，IP是写源服务器IP, CNAME系统会自动生成
 
@@ -93,6 +92,6 @@ cdn配置部骤流程图:
 
 ![image](https://user-images.githubusercontent.com/90588289/134446635-b28a9769-f67d-4d91-b21f-52d5421be052.png)
 
-[站点设置功能介绍](zh-cn/SharkCdnDoc/CDN管理/站点列表/站点设置功能介绍.md)
+立即配置：[站点设置功能介绍](zh-cn/SharkCdnDoc/CDN管理/站点列表/站点设置功能介绍.md)
 
 到这里就配置完成了
