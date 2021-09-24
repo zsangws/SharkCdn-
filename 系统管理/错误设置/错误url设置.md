@@ -1,4 +1,6 @@
-错误url设置
+### 错误url设置
+
+点击系统管理-- 错误设置--错误url设置
 
 ![image](https://user-images.githubusercontent.com/90588289/133720961-5459487c-0b8c-4932-94fb-57fb6b453fad.png)
 
