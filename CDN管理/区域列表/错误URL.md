@@ -1,10 +1,12 @@
 ### 错误URL
 
+点击CDN管理--区域列表--配置--错误URL
+
+![image](https://user-images.githubusercontent.com/90588289/134640725-5eaee839-cfb0-46ea-8a09-5b977a62ef0b.png)
+
 ![image](https://user-images.githubusercontent.com/90588289/133735570-55c9bdd1-d5fd-4a17-994e-35a656922818.png)
 
 备注：错误url主要是配置独立主控的自定义错误状态码时会用到
-
-
 
 独立主控自定义错误状态码
 
