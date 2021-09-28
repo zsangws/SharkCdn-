@@ -6,7 +6,7 @@
 
 #### 快速入门
 
-[SharkCdn部署](zh-cn/SharkCdnDoc/快速入门/SharkCdn部署.md)　　　　　　　　　
+[SharkCdn部署](https://github.com/zsangws/SharkCdnDoc/blob/main/docs/zh-cn/SharkCdnDoc/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/SharkCdn%E9%83%A8%E7%BD%B2.md)　　　　　　　　　
 [API文档](zh-cn/SharkCdnApi/API文档.md)
 
 ---
