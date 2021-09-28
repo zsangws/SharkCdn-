@@ -22,9 +22,9 @@ hsts解释和作用：
 
 HSTS的作用是强制客户端（如浏览器）使用HTTPS与服务器创建连接。服务器开启HSTS的方法是，当客户端通过HTTPS发出请求时，在服务器返回的超文本传输协议响应头中包含Strict-Transport-Security字段。非加密传输时设置的HSTS字段无效。
 
-比如，https://xxx 的响应头含有Strict-Transport-Security: max-age=2592000; includeSubDomains。这意味着两点：
+比如，```https://xxx``` 的响应头含有Strict-Transport-Security: max-age=2592000; includeSubDomains。这意味着两点：
 
-在接下来的一个月（即2592000秒）中，浏览器只要向xxx或其子域名发送HTTP请求时，必须采用HTTPS来发起连接。比如，用户点击超链接或在地址栏输入 http://xxx/ ，浏览器应当自动将 http 转写成 https，然后直接向 https://xxx/ 发送请求。
+在接下来的一个月（即2592000秒）中，浏览器只要向xxx或其子域名发送HTTP请求时，必须采用HTTPS来发起连接。比如，用户点击超链接或在地址栏输入 ```http://xxx/``` ，浏览器应当自动将 http 转写成 https，然后直接向 ```https://xxx/``` 发送请求。
 
 简单一句话，开启hsts后，第一次访问通过http后，之后的访问都会自动跳转到https访问，所以hsts也有强制ssl的效果
 

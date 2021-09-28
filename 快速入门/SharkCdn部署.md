@@ -52,7 +52,7 @@
 
 立即配置：[新建分组](zh-cn/SharkCdnDoc/CDN管理/分组解析/新建分组.md)
 
-(1). 点击分组解析，进入分组
+(1). 点击分组解析，进入分组，点击分组名称，进入启用节点界面
 
 ![image](https://user-images.githubusercontent.com/90588289/134446548-b9d913f5-8532-43a8-8098-7820d8e8b72e.png)
 
@@ -74,7 +74,7 @@
 
 ### 第五步：新增站点
 
-如下图点击增加站点
+如下图点击站点列表--添加站点--输入站点名称、密码（选填），增加站点
 
 ![image](https://user-images.githubusercontent.com/90588289/134446595-d4ac24fc-ce07-4792-a1dc-16311b8b57a2.png)
 
@@ -88,10 +88,6 @@
 
 记录管理--添加域名，域名是要做cdn的域名，IP是源服务器IP, CNAME系统会自动生成
 
-然后到域名商那添加：```www.test.com的cname解析到test.```
-
 ![image](https://user-images.githubusercontent.com/90588289/134446635-b28a9769-f67d-4d91-b21f-52d5421be052.png)
-
-立即配置：[站点设置功能介绍](zh-cn/SharkCdnDoc/CDN管理/站点列表/站点设置功能介绍.md)
 
 到这里就配置完成了
