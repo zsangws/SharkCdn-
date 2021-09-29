@@ -14,13 +14,13 @@
 
 ![image](https://user-images.githubusercontent.com/90588289/134446437-9523368c-6332-42b9-b774-be7e87d087ed.png)
 
-立即配置：[添加区域](zh-cn/SharkCdnDoc/CDN管理/区域列表/添加区域.md)
+立即配置：[添加区域](/SharkCdnDoc/CDN管理/区域列表/添加区域.md)
 
 (2). 点击CDN管理---节点列表---新增节点 会弹出节点的安装程序
 
 ![image](https://user-images.githubusercontent.com/90588289/134446455-cbb2c796-e881-4a96-bd0d-95742fdd42d6.png)
 
-立即配置：[添加节点](zh-cn/SharkCdnDoc/CDN管理/节点列表/添加节点.md)
+立即配置：[添加节点](/SharkCdnDoc/CDN管理/节点列表/添加节点.md)
 
 (3).linux服务器，直接复制下图脚本命令运行。windows服务器，下载对应版本到服务器上运行安装。
 
@@ -50,7 +50,7 @@
 
 在分组解析中启用相应的节点ip(分组可自行新增，同一区域下的节点可在不同分组中共用)，
 
-立即配置：[新建分组](zh-cn/SharkCdnDoc/CDN管理/分组解析/新建分组.md)
+立即配置：[新建分组](/SharkCdnDoc/CDN管理/分组解析/新建分组.md)
 
 (1). 点击分组解析，进入分组，点击分组名称，进入启用节点界面
 
@@ -70,7 +70,7 @@
 
 ![image](https://user-images.githubusercontent.com/90588289/134446579-23de9056-1b30-4245-9354-3f58dfd611c5.png)
 
-立即配置：[添加产品](zh-cn/SharkCdnDoc/CDN管理/产品列表/添加产品.md)
+立即配置：[添加产品](/SharkCdnDoc/CDN管理/产品列表/添加产品.md)
 
 ### 第五步：新增站点
 
