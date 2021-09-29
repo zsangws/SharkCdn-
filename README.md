@@ -6,7 +6,7 @@
 
 #### 快速入门
 
-[SharkCdn部署](zh-cn/SharkCdnDoc/快速入门/SharkCdn部署.md)　　　　　　　　　
+[SharkCdn部署](/SharkCdnDoc/快速入门/SharkCdn部署.md)　　　　　　　　　
 [API文档](zh-cn/SharkCdnApi/API文档.md)
 
 ---
