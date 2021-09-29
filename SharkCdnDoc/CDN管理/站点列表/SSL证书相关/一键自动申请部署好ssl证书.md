@@ -14,4 +14,6 @@ SSL（Secure Sockets Layer），中文名为“安全套接层协议层”，即
 
 3.然后过几分钟点开SSL管理可以查看证书状态，如下图就是申请成功
 
+查看：[SSL管理](/SharkCdnDoc/CDN管理/SSL管理/SSL管理.md)
+
 ![image](https://user-images.githubusercontent.com/90588289/133742072-8292f24d-9de1-4e01-b00e-7673f74d2595.png)
