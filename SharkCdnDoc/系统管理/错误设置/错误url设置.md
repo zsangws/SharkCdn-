@@ -4,6 +4,6 @@
 
 ![image](https://user-images.githubusercontent.com/90588289/135243105-b6b681a1-20fc-45d4-9090-a2b0d0e51edf.png)
 
-备注：如上图，可以点击建议设置，显示```http://ip:82/system/error``` ip是你主控的ip
+备注：如上图，可以点击建议设置，显示```http://ip:8888/system/error``` ip是你主控的ip
 
-也可以输入域名，https格式为：```https://域名:4430/system/error``` http格式为：```http://域名:82/system/error``` 域名是你自己的域名，要解析到cdn主控ip
+也可以输入域名，```http://域名:8888/system/error``` 域名是你自己的域名，要解析到sharkcdn主控ip
