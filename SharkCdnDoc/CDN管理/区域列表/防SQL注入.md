@@ -6,7 +6,7 @@
 
 ![image](https://user-images.githubusercontent.com/90588289/133735783-76c31b06-be24-42db-a41f-52c23df07958.png)
 
-备注：代码如下：
+备注如下：
 
 参数名称：param
 
