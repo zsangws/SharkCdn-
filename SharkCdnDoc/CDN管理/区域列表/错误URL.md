@@ -2,7 +2,7 @@
 
 点击CDN管理--区域列表--配置--错误URL
 
-![image](https://user-images.githubusercontent.com/90588289/134640725-5eaee839-cfb0-46ea-8a09-5b977a62ef0b.png)
+![image](https://user-images.githubusercontent.com/90588289/135242583-4a99ed36-7127-41fc-a9e0-e60b8d3a581b.png)
 
 ![image](https://user-images.githubusercontent.com/90588289/133735570-55c9bdd1-d5fd-4a17-994e-35a656922818.png)
 
