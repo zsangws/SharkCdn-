@@ -6,7 +6,7 @@ SSL（Secure Sockets Layer），中文名为“安全套接层协议层”，即
 
 1：在站点里[添加域名](/SharkCdnDoc/CDN管理/站点列表/添加域名.md)，并做好解析到cname或者直接解析到cdn节点ip,否则申请证书不会通过，然后点修改，如下图:
 
-![image](https://user-images.githubusercontent.com/90588289/135224442-5c0888ef-4c50-4ad9-ad4d-a017648e978b.png)
+![image](https://user-images.githubusercontent.com/90588289/135227802-add4dbdf-a39e-4555-8923-e6b515621da0.png)
 
 2.点击添加好的域名的右边的修改按钮--自动获取，就会开始自动申请证书
 
