@@ -6,7 +6,7 @@
 
 ![image](https://user-images.githubusercontent.com/90588289/134446404-8fcee193-0fc9-4387-9c74-0629edf3ce97.png)
 
-接入文档：[DNS接入](zh-cn/SharkCdnDoc/系统管理/系统设置/DNS接入.md)
+接入文档：[DNS接入](/SharkCdnDoc/系统管理/系统设置/DNS接入.md)
 
 ### 第二步：增加区域和增加节点
 
