@@ -10,7 +10,7 @@
 
 独立主控自定义错误状态码
 
-输入域名，https格式为：```https://域名:4430/system/error``` http格式为：```http://域名:82/system/error``` 域名是你自己的域名，要解析到cdn主控ip
+输入域名，http格式为：```http://域名:8888/system/error``` 域名是你自己的域名，要解析到cdn主控ip
 
 配置完url这个地址在浏览器的访问效果如下就是正常的：
 
