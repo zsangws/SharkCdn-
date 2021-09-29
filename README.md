@@ -49,7 +49,7 @@
 **节点列表**
 - [节点列表介绍](/SharkCdnDoc/CDN管理/节点列表/节点列表介绍.md)　　　　　　　　
 [添加节点](/SharkCdnDoc/CDN管理/节点列表/添加节点.md)　　　　　　　　　
-[新增子节点](/SharkCdnDoc/CDN管理/节点列表/新增子节点.md)　　　　　　　
+[新增子节点](/SharkCdnDoc/CDN管理/节点列表/新增子节点.md)　　　　　　
 [节点配置](/SharkCdnDoc/CDN管理/节点列表/节点配置.md)　　　　　　　　　
 - [升级cdn节点版本](/SharkCdnDoc/CDN管理/节点列表/升级cdn节点版本.md)　　　　　　
 [登陆节点3311后台](/SharkCdnDoc/CDN管理/节点列表/登陆节点3311后台.md)　　　　　　
