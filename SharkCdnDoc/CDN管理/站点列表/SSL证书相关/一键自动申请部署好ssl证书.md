@@ -4,11 +4,11 @@ SSL（Secure Sockets Layer），中文名为“安全套接层协议层”，即
 
 一键自动开通ssl证书。只需要一键操作就能自动帮您申请部署好ssl证书，有效期三个月，到期前三天会自动续期，如果申请失败会自动重试三次
 
-1：在站点里添加域名，并做好解析到cname别名或者直接解析到cdn节点ip,否则申请证书不会通过，然后点修改，如下图:
+1：在站点里[添加域名](/SharkCdnDoc/CDN管理/站点列表/添加域名.md)，并做好解析到cname或者直接解析到cdn节点ip,否则申请证书不会通过，然后点修改，如下图:
 
-![image](https://user-images.githubusercontent.com/90588289/133742049-a5586c74-98bc-49db-98da-50812002a9a1.png)
+![image](https://user-images.githubusercontent.com/90588289/135224442-5c0888ef-4c50-4ad9-ad4d-a017648e978b.png)
 
-2.点自动获取，就会开始自动申请证书
+2.点击添加好的域名的右边的修改按钮--自动获取，就会开始自动申请证书
 
 ![image](https://user-images.githubusercontent.com/90588289/133742058-1f6a9513-ae1f-4138-9fba-1d9df0c95a9f.png)
 
