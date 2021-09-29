@@ -38,7 +38,7 @@
 [资源设置](/SharkCdnDoc/CDN管理/区域列表/资源设置.md)　　　　　　    
 - [错误URL](/SharkCdnDoc/CDN管理/区域列表/错误URL.md)　　　　　　　　　　
 [缓存设置](/SharkCdnDoc/CDN管理/区域列表/缓存设置.md)　　　　　　　　　
-[防SQL注入](zh-cn/SharkCdnDoc/CDN管理/区域列表/防SQL注入.md)　　　　　　　
+[防SQL注入](/SharkCdnDoc/CDN管理/区域列表/防SQL注入.md)　　　　　　　
 [日志设置](/SharkCdnDoc/CDN管理/区域列表/日志设置.md)　　　　　　　  
 - [多层CDN设置](/SharkCdnDoc/CDN管理/区域列表/多层CDN设置.md)　　　　　　　　
 [自定义设置](/SharkCdnDoc/CDN管理/区域列表/自定义设置.md)　　　　　　　　
