@@ -21,5 +21,3 @@
   </form>
   </body></html>
 ```
-
-[自定义防cc代码](/sharkcdn/CDN管理/站点列表/自定义防cc代码.md)
