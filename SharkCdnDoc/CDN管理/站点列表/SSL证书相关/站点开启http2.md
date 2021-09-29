@@ -4,7 +4,7 @@ HTTP/2 （原名HTTP/2.0）即超文本传输协议 2.0，是下一代HTTP协议
 
 sharkcdn如何开启http2
 
-1.如下图先添加好https证书，然后开启http2，点立即提交
+1.点击CDN管理--站点列表--要添加https证书的站点名--站点设置--https设置--打开，如下图先添加好https证书，然后开启http2，点立即提交
 
 ![image](https://user-images.githubusercontent.com/90588289/133751477-9bc52fd9-7631-4530-9255-18084697ae10.png)
 
