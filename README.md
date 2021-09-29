@@ -88,7 +88,6 @@
 [Cdn设置负载均衡](/SharkCdnDoc/CDN管理/站点列表/Cdn设置负载均衡.md)　　　
 [Cdn如何站点设置中添加301跳转](/SharkCdnDoc/CDN管理/站点列表/Cdn如何站点设置中添加301跳转.md)
 - [添加域名](/SharkCdnDoc/CDN管理/站点列表/添加域名.md)　　　　　　　　　　
-[一个域名和源匹配多个端口配置(端口映射)](/SharkCdnDoc/CDN管理/站点列表/一个域名和源匹配多个端口配置(端口映射).md)　
 
 **SSL证书相关**
 - [站点开启http2](/SharkCdnDoc/CDN管理/站点列表/SSL证书相关/站点开启http2.md)　　　
