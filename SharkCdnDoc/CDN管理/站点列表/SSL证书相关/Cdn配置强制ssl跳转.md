@@ -6,7 +6,7 @@
 
 登陆用户站点，点击下图图标：
 
-![image](https://user-images.githubusercontent.com/90588289/133751599-001b6b45-a69f-4cb8-abee-184347a00e0a.png)
+![image](https://user-images.githubusercontent.com/90588289/135227802-add4dbdf-a39e-4555-8923-e6b515621da0.png)
 
 2.如下图添加证书和开启强制ssl即可
 
