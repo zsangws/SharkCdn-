@@ -80,7 +80,7 @@
 [添加验证码防cc](/SharkCdnDoc/CDN管理/站点列表/添加验证码防cc.md)　　　　
 [设置整个站点不缓存](/SharkCdnDoc/CDN管理/站点列表/设置整个站点不缓存.md)　　　　　　　
 - [站点应用防火墙设置](/SharkCdnDoc/CDN管理/站点列表/站点应用防火墙设置.md)　　　　　
-[设置token签名防盗链](/SharkCdnDoc/CDN管理/站点列表/设置token签名防盗链.md)　　　　
+[设置token签名防盗链](/SharkCdnDoc/CDN管理/站点列表/设置token签名防盗链.md)　　　
 [站点开启强制缓存](/SharkCdnDoc/CDN管理/站点列表/站点开启强制缓存.md)　　　
 [批量添加url(301/302)跳转](/SharkCdnDoc/CDN管理/站点列表/批量添加url(301,302)跳转.md)　　　
 - [控制添加的访问控制顺序](/SharkCdnDoc/CDN管理/站点列表/控制添加的访问控制顺序.md)　　　
