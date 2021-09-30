@@ -89,6 +89,7 @@
 [站点里对域名的各种操作](/SharkCdnDoc/CDN管理/站点列表/站点里对域名的各种操作.md)
 - [控制添加的访问控制顺序](/SharkCdnDoc/CDN管理/站点列表/控制添加的访问控制顺序.md)　　　
 [Cdn如何站点设置中添加301跳转](/SharkCdnDoc/CDN管理/站点列表/Cdn如何站点设置中添加301跳转.md)
+[Cdn配置四层协议端口转发](/SharkCdnDoc/CDN管理/站点列表/Cdn配置四层协议端口转发.md)
 
 **SSL证书相关**
 - [站点开启http2](/SharkCdnDoc/CDN管理/站点列表/SSL证书相关/站点开启http2.md)　　　
