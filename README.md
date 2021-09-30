@@ -86,9 +86,9 @@
 - [控制添加的访问控制顺序](/SharkCdnDoc/CDN管理/站点列表/控制添加的访问控制顺序.md)　　　
 [域名如何带上端口访问](/SharkCdnDoc/CDN管理/站点列表/域名如何带上端口访问.md)　　　
 [Cdn设置负载均衡](/SharkCdnDoc/CDN管理/站点列表/Cdn设置负载均衡.md)　　　
-[Cdn如何站点设置中添加301跳转](/SharkCdnDoc/CDN管理/站点列表/Cdn如何站点设置中添加301跳转.md)
-- [添加域名](/SharkCdnDoc/CDN管理/站点列表/添加域名.md)　　　　　　　　　　
 [站点里对域名的各种操作](/SharkCdnDoc/CDN管理/站点列表/站点里对域名的各种操作.md)
+- [添加域名](/SharkCdnDoc/CDN管理/站点列表/添加域名.md)　　　　　　　　　　
+[Cdn如何站点设置中添加301跳转](/SharkCdnDoc/CDN管理/站点列表/Cdn如何站点设置中添加301跳转.md)
 
 **SSL证书相关**
 - [站点开启http2](/SharkCdnDoc/CDN管理/站点列表/SSL证书相关/站点开启http2.md)　　　
